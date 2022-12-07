@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1105" height="897" viewBox="0 0 1105 897">
+  <defs>
+    <filter id="Pole_pod_tekst" x="0" y="0" width="1105" height="897" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Pole_pod_tekst-2" x="0" y="0" width="1105" height="897" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="40" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Pole_pod_tekst)">
+        <path id="Pole_pod_tekst-3" data-name="Pole pod tekst" d="M969,4311h732l-133,657H836Z" fill="#e4022e"/>
+      </g>
+    </clipPath>
+  </defs>
+  <g id="Pole_pod_tekst-4" data-name="Pole pod tekst" transform="translate(-716 -4191)">
+    <g transform="matrix(1, 0, 0, 1, 716, 4191)" filter="url(#Pole_pod_tekst-2)">
+      <path id="Pole_pod_tekst-5" data-name="Pole pod tekst" d="M969,4311h732l-133,657H836Z" transform="translate(-716 -4191)" fill="#e4022e"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="57" height="57" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Facebook" transform="translate(-1463 -5744)">
+    <g id="Facebook-2" data-name="Facebook" transform="translate(1463 5744)">
+      <g id="Group_6" data-name="Group 6">
+        <g id="Group_5" data-name="Group 5" clip-path="url(#clip-path)">
+          <path id="Path_25" data-name="Path 25" d="M53.854,0H3.144A3.146,3.146,0,0,0,0,3.146v50.71A3.146,3.146,0,0,0,3.146,57h27.3V34.957h-7.4V26.329h7.4V19.98c0-7.363,4.5-11.371,11.064-11.371a60.9,60.9,0,0,1,6.638.339v7.7H43.62c-3.574,0-4.266,1.7-4.266,4.19v5.5H47.9l-1.113,8.628H39.354V57h14.5A3.146,3.146,0,0,0,57,53.855h0V3.144A3.146,3.146,0,0,0,53.854,0"/>
+        </g>
+      </g>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1516.853,5801h-14.5v-22.042h7.432l1.112-8.628h-8.544v-5.495c0-2.493.693-4.191,4.266-4.191h4.529v-7.7a60.937,60.937,0,0,0-6.637-.339c-6.569,0-11.063,4.008-11.063,11.372v6.349h-7.4v8.628h7.4V5801h-27.3a3.144,3.144,0,0,1-3.146-3.143v-50.71a3.145,3.145,0,0,1,3.143-3.146h50.709a3.147,3.147,0,0,1,3.148,3.144v50.71h0a3.144,3.144,0,0,1-3.145,3.145Z" fill="#e4022e"/>
+  </g>
+</svg>

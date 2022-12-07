@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58" viewBox="0 0 58 58">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_7" data-name="Rectangle 7" width="58" height="58" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Linkedin" transform="translate(-1541 -5743)">
+    <g id="Linkedin-2" data-name="Linkedin" transform="translate(1541 5743)">
+      <g id="Group_14" data-name="Group 14">
+        <g id="Group_13" data-name="Group 13" clip-path="url(#clip-path)">
+          <path id="Path_33" data-name="Path 33" d="M52.2,0H5.8A5.817,5.817,0,0,0,0,5.8V52.2A5.817,5.817,0,0,0,5.8,58H52.2A5.817,5.817,0,0,0,58,52.2V5.8A5.817,5.817,0,0,0,52.2,0M17.4,49.3H8.7V23.2h8.7ZM13.05,18.27a5.22,5.22,0,1,1,5.22-5.22,5.2,5.2,0,0,1-5.22,5.22M49.3,49.3H40.6V33.93a4.35,4.35,0,1,0-8.7,0V49.3H23.2V23.2h8.7v3.48a9.368,9.368,0,0,1,7.25-4.06A10.275,10.275,0,0,1,49.3,32.77Z"/>
+        </g>
+      </g>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M1546.8,5801a5.818,5.818,0,0,1-5.8-5.8v-46.4a5.818,5.818,0,0,1,5.8-5.8h46.4a5.818,5.818,0,0,1,5.8,5.8v46.4a5.818,5.818,0,0,1-5.8,5.8Zm34.8-24.07v15.37h8.7v-16.53a10.277,10.277,0,0,0-10.15-10.15,9.37,9.37,0,0,0-7.25,4.061V5766.2h-8.7v26.1h8.7v-15.37a4.35,4.35,0,0,1,8.7,0Zm-31.9,15.37h8.7v-26.1h-8.7Zm-.869-36.25a5.22,5.22,0,1,0,5.219-5.221A5.2,5.2,0,0,0,1548.831,5756.05Z" fill="#e4022e"/>
+  </g>
+</svg>
