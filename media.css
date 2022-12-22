@@ -1,0 +1,176 @@
+:export {
+  mobile: 560px;
+  tablets: 768px;
+  desktop: 1024px;
+  large: 1300px;
+  min-extra-large: 1301px;
+}
+
+@media only screen and (max-width: 560px) {
+  .header .header__menu {
+    display: none;
+  }
+  .header .header__logo {
+    width: 50%;
+  }
+  .ham-menu_wrapper .ham-menu__content {
+    height: 75%;
+  }
+}
+@media all and (min-width: 560px) and (max-width: 768px) {
+  body .container section {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  body .container .down-arrow {
+    position: relative;
+    top: -92.5px;
+  }
+  body .container .down-arrow img {
+    width: 60px;
+    filter: brightness(0) invert(1);
+  }
+  body .container #first-page {
+    background-image: url(../images/main.jpeg);
+    height: 100vh;
+  }
+  body .container #first-page .first-page__left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .container #first-page .first-page__left .left__content__wrapper {
+    width: 0;
+  }
+  body .container #first-page .first-page__left .left__content__wrapper .left__arrow {
+    display: none;
+  }
+  body .container #first-page .first-page__left .left__content__wrapper .left__content {
+    padding: 40px;
+    height: auto;
+    overflow: visible !important;
+  }
+  body .container #first-page .first-page__left .left__content__wrapper .left__content h1 {
+    font-size: 2.5rem;
+    line-height: 57.5px;
+  }
+  body .container #first-page .first-page__left .left__content__wrapper .left__content::before {
+    display: none;
+  }
+  body .container #first-page .first-page__left .left__content__wrapper .left__content::after {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body .container #first-page .first-page__left .menu {
+    display: none;
+  }
+  body .container #first-page .first-page__img {
+    display: none;
+  }
+  body .container #second-page {
+    padding: 30px;
+    box-shadow: none;
+  }
+  body .container #second-page .second-page__photo-wrapper {
+    display: none;
+  }
+  body .container #second-page .second-page__content-wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .container #second-page .second-page__content-wrapper .content-body {
+    flex-direction: column;
+    gap: 40px;
+  }
+  body .container #second-page .second-page__content-wrapper .content-body .content-block {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    width: 100%;
+    box-shadow: 1px 10px 24px 0px rgba(66, 68, 90, 0.2);
+  }
+  body .container #second-page .second-page__content-wrapper .content-body .content-block .block__header {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  body .container #second-page .second-page__content-wrapper .content-body .content-block p {
+    width: 90%;
+  }
+  body .container #third-page {
+    display: none;
+  }
+  body .container #sixth-page {
+    margin: 0;
+  }
+  body .container #printers {
+    padding: 50px 30px 50px 30px;
+    height: auto;
+    border-top: 50px solid rgb(228, 2, 46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  body .container #printers > * {
+    margin: 0;
+    padding: 0;
+  }
+  body .container #printers .printers__title {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    font-size: 2.5rem;
+    box-shadow: 1px 10px 24px 0px rgba(66, 68, 90, 0.2);
+  }
+  body .container #printers .printers__flex {
+    flex-direction: column;
+    gap: 50px;
+    top: 0;
+  }
+  body .container #printers .printers__flex .printers__arrow {
+    display: none;
+  }
+  body .container #printers .printers__flex .printer__wrapper {
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  body .container #printers .printers__flex .printer__wrapper img {
+    width: 70%;
+    height: 70%;
+    margin-bottom: -180px !important;
+    top: 0;
+  }
+  body .container #printers .printers__flex .printer__wrapper .printer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    top: 0;
+  }
+  body .container #printers .printers__flex .printer__wrapper .printer__content h1 {
+    margin: 5px;
+  }
+  body .container #printers .printers__flex .printer__wrapper .printer__content h3 {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+  }
+  body .header .header__menu {
+    display: none;
+  }
+  body .header .header__logo {
+    width: 50%;
+  }
+  body .ham-menu-wrapper .ham-menu__content {
+    height: 75%;
+  }
+}/*# sourceMappingURL=media.css.map */

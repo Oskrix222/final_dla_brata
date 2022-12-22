@@ -5,24 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+   
+    <script src="https://kit.fontawesome.com/fa7d9191f6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js" defer></script>
-    <script src="https://kit.fontawesome.com/fa7d9191f6.js" crossorigin="anonymous" defer></script>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="media.css">
+    
     <title>Document</title>
 </head>
 
 <body>
     <div class="header">
         <div class="header__logo">
-            <img src="images/logo_podstawowe.svg" alt="logo" class="logo logo--header">
+            <a href="index.html">
+                <img src="images/logo_podstawowe.svg" alt="logo" class="logo logo--header"></a>
         </div>
 
         <div class="header__menu">
             <a href="#first-page" class="menu__link menu__link--active"><i class="fa-solid fa-house"></i></a>
-            <a href="#second-page" class="menu__link">Przewaga</a>
-            <a href="#printers" class="menu__link">Produkty</a>
-            <a href="#sponsors" class="menu__link">Partnerstwo</a>
-            <a href="#contact" class="menu__link">Kontakt</a>
+            <a href="#second-page" class="menu__link">Drukarki 3D</a>
+            <a href="#printers" class="menu__link">Druk 3D na zlecenie</a>
+            <a href="#sixth-page" class="menu__link">O nas</a>
+            <a href="#footer" class="menu__link contact-link">Kontakt</a>
         </div>
         <div class="lng-ham-btns">
             <div class="lng-ham-btns__btns">
@@ -32,14 +39,27 @@
                 <a href="">EN</a>
             </div>
             <div class="ham-btn clipped__right">
-                <button>
-                    <div class="ham-btn__lines"></div>
-                    <div class="ham-btn__lines"></div>
-                    <div class="ham-btn__lines"></div>
-                </button>
+
             </div>
         </div>
     </div>
+
+    <button class="main-ham-btn">
+        <div class="ham-btn__lines first-line"></div>
+        <div class="ham-btn__lines second-line"></div>
+        <div class="ham-btn__lines third-line"></div>
+    </button>
+
+    <div class="ham-menu-wrapper">
+        <div class="ham-menu__content"> 
+            <a href="#first-page" class="menu__link border-none menu__link--active">Home</a>
+            <a href="#second-page" class="menu__link border-none">Drukarki 3D</a>
+            <a href="#printers" class="menu__link border-none">Druk 3D na zlecenie</a>
+            <a href="#sixth-page" class="menu__link border-none">O nas</a>
+            <a href="#footer" class="menu__link contact-link border-none">Kontakt</a>
+        </div>
+    </div>
+
     <div class="container">
         <section id="first-page">
             <div class="first-page__left">
@@ -48,9 +68,9 @@
                     <div class="left__content clipped__left">
                         <h1>Rozwiązania dające nowe możliwości.</h1>
                         <h3>R3Dmondo 500 to nowe możliwości prototypowania przy najlepszy7m stosunku ceny do jakości.
-                            Lorem
-                            ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                          </h3>
                         <button class="btn btn--transparent">WIĘCEJ <i class="fa-solid fa-arrow-right"></i></button>
+
                     </div>
                 </div>
                 <div class="menu">
@@ -62,76 +82,103 @@
             </div>
             <img src="images/main.jpeg" alt="" class="first-page__img">
         </section>
-        <a href="#second-page" class="menu__link down-arrow"><img src="images/down_arrow.svg" alt=""></a>
+
+        <div class="down-arrow">
+            <img src="images/down_arrow.svg" alt="">
+        </div>
+
         <section id="second-page">
-            <div class="second-page__photo">
-                <div class="second-page-red-square red-square"></div>
+            <div class="second-page__photo-wrapper">
+                <img class="second-page__photo" src="images/srubka.svg">
             </div>
-            <div class="second-page__content">
-                <h1>Na czym polega przewaga rozwiązań <span class=" text--red">R3D</span> Motion?</h1>
-                <h3>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae necessitatibus deserunt,
-                    accusantium minima ullam consequuntur ut labore, quae velit maxime totam? Optio doloremque
-                    deleniti iusto possimus repellat, perferendis vitae corrupti!
-
-
-                </h3>
-                <div class="content-block1">
-                    <h1><img src="images/maly_kopniety_kwadracik.svg" alt="">
-                        Jakość</h1>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aspernatur optio, sint
-                        cum tempora consequuntur labore veniam rerum, vel animi corporis architecto debitis
-                        laudantium inventore repellat est impedit unde vero.
-
-
-                    </p>
+            <div class="second-page__content-wrapper">
+                <div class="content-header">
+                    <h1 class="animate">Na czym polega przewaga rozwiązań <span class="text--red">R3D</span> Motion?
+                    </h1>
+                    <h3 class="animate">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae necessitatibus deserunt,
+                        accusantium minima ullam consequuntur ut labore, quae velit maxime totam? Optio doloremque
+                        deleniti iusto possimus repellat, perferendis vitae corrupti!
+                    </h3>
                 </div>
-                <div class="content-block2">
-                    <h1><img src="images/maly_kopniety_kwadracik.svg" alt="">Open Source</h1>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aspernatur optio, sint
-                        cum tempora consequuntur labore veniam rerum, vel animi corporis architecto debitis
-                        laudantium inventore repellat est impedit unde vero.
-                    </p>
-                </div>
-                <div class="content-block3">
-                    <h1><img src="images/maly_kopniety_kwadracik.svg" alt="">Cena</h1>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aspernatur optio, sint
-                        cum tempora consequuntur labore veniam rerum, vel animi corporis architecto debitis
-                        laudantium inventore repellat est impedit unde vero.
+                <div class="content-body">
+                    <div class="content-block animate">
+                        <div class="block__header">
+                            <img src="images/maly_kopniety_kwadracik.svg" alt="">
+                            <h1>Prędkość</h1>
+                        </div>
+                        <p>
+                            jedna maszyna serii Mondo jest w stanie zastąpić 3 konwencjonalne drukarki 3D starszej
+                            generacji.
+                        </p>
+                    </div>
+                    <div class="content-block animate">
+                        <div class="block__header">
+                            <img src="images/maly_kopniety_kwadracik.svg" alt="">
+                            <h1>otwarty system</h1>
+                        </div>
+
+                        <p>
+                            nie ograniczamy możliwości korzystania z różnych materiałów różnych producentów, jesteśmy w
+                            trakcie tworzenia gotowych ustawień do filamentów danego producenta by zapewnić jak
+                            najlepszą
+                            jakość przy jak najprostszym użytkowaniu
+                        </p>
+                    </div>
+                    <div class="content-block animate">
+                        <div class="block__header">
+                            <img src="images/maly_kopniety_kwadracik.svg" alt="">
+                            <h1>jakość</h1>
+                        </div>
+
+                        <p>
+                            maszyna jest wykonana w całości z profili alumniniowych, blach stalowych co zapewnia
+                            najsztywniejszą i najwytrzymalszą konstrukcje w tej klasie maszyny - przekłada się to na
+                            swietną
+                            jakość druku przy zachowaniu wysokich prędkości i przyspieszeń, także możliwości
+                            kalibrowania i
+                            utrzymywania tolerancji.
 
 
-                    </p>
+                        </p>
+                    </div>
+                    <div class="content-block animate">
+                        <div class="block__header">
+                            <img src="images/maly_kopniety_kwadracik.svg" alt="">
+                            <h1>szybki serwis</h1>
+                        </div>
+
+                        <p>
+                            głowica to EVA 3.0 co zapewnia kompatybilność z większością części z rynku oraz modułowy
+                            system.
+                            Drukarki serii mondo posiadają także modułowy system elektroniki - dzięki niemu wymiana
+                            sterowania maszyny zajmuje zaledwie 10-20 minut w przeciwieństwie do aktualnie stosowanych
+                            rozwiązań i dziesiątek pojedynczych wtyczek z oznaczeniami.
+                        </p>
+                    </div>
                 </div>
-                <div class="content-block4">
-                    <h1><img src="images/maly_kopniety_kwadracik.svg" alt="">Serwis</h1>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias aspernatur optio, sint
-                        cum tempora consequuntur labore veniam rerum, vel animi corporis architecto debitis
-                        laudantium inventore repellat est impedit unde vero.
-                    </p>
-                </div>
+
             </div>
         </section>
 
         <section id="third-page">
             <div class="third-page__img clipped__left--noBG"></div>
             <div class="third-page__content clipped__right">
-                <h1>Nasza misja to dostarczanie najlepszych rozwiązań w dobrej cenie.</h1>
-                <button class="btn btn--transparent"></button>
+                <h1 class="animate">Nasza misja to dostarczanie najlepszych rozwiązań w dobrej cenie.</h1>
+                <button class="btn btn--transparent animate">Skontaktuj się z nami
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </section>
         <section id="printers">
-            <h1 class="printers__title">Nasze rozwiązania dla druku 3D.</h1>
+            <h1 class="printers__title animate">Nasze rozwiązania dla druku 3D.</h1>
             <div class="printers__flex">
                 <div class="printers__arrow printers__arrow--left"><img src="images/down_arrow.svg" alt=""></div>
                 <div class="printer__wrapper">
-                    <img src="images/printer_1.png" alt="" class="printer__img printer__img--smaller">
-                    <div class="printer__content printer__content--smaller">
-                        <h1>R3D Mondo 300</h1>
-                        <h3>
+                    <img src="images/MONDO300_RENDER_1.png" alt="" class="printer__img animate printer__img--smaller">
+                    <div class="printer__content">
+                        <h1 class="animate">R3D Mondo 300</h1>
+                        <h3 class="animate">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque animi tenetur dolor,
                             beatae minima nobis laudantium tempora ipsa recusandae architecto iure ea perspiciatis
                             commodi laboriosam quae provident suscipit. Vitae, explicabo?
@@ -139,16 +186,27 @@
                             eligendi voluptas unde voluptate. Culpa voluptatibus, assumenda perspiciatis odit magnam
                             corrupti nesciunt autem quia amet, saepe architecto dignissimos voluptas.
                         </h3>
-                        <button class="printer-spec" data-text1="..." data-text2="...">Specyfikacja <i class="fa-solid fa-arrow-down"></i></button>
-                        <button class="printer-spec last" data-text1="..." data-text2="...">Wymiary <i class="fa-solid fa-arrow-down"></i></button>
-                        <button class="btn btn--red">DOWIEDZ SIĘ WIĘCEJ</button>
+                        <button class="printer-spec animate" data-text1="..." data-existing="false"
+                            data-text2="...">Specyfikacja <i class="fa-solid fa-arrow-down"></i>
+                            <div class="printer-spec__text"
+                                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus odio in ipsa nesciunt voluptate architecto necessitatibus ullam, nulla aperiam iusto, officiis, ut voluptatum voluptates! Molestiae aliquid ipsa quae veritatis.">
+                            </div>
+                        </button>
+                        <button class="printer-spec animate last">Wymiary <i class="fa-solid fa-arrow-down"></i>
+                            <div class="printer-spec__text"
+                                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus odio in ipsa nesciunt voluptate architecto necessitatibus ullam, nulla aperiam iusto, officiis, ut voluptatum voluptates! Molestiae aliquid ipsa quae veritatis.">
+                            </div>
+                        </button>
+
+
+                        <button class="btn btn--red animate">DOWIEDZ SIĘ WIĘCEJ</button>
                     </div>
                 </div>
                 <div class="printer__wrapper">
-                    <img src="images/printer_2.png" alt="" class="printer__img">
+                    <img src="images/printer_2.png" alt="" class="printer__img animate">
                     <div class="printer__content">
-                        <h1>R3D Mondo 500</h1>
-                        <h3>
+                        <h1 class="animate">R3D Mondo 500</h1>
+                        <h3 class="animate">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque animi tenetur dolor,
                             beatae minima nobis laudantium tempora ipsa recusandae architecto iure ea perspiciatis
                             commodi laboriosam quae provident suscipit. Vitae, explicabo?
@@ -156,10 +214,22 @@
                             eligendi voluptas unde voluptate. Culpa voluptatibus, assumenda perspiciatis odit magnam
                             corrupti nesciunt autem quia amet, saepe architecto dignissimos voluptas.
                         </h3>
-                        <button class="printer-spec" data-text1="..." data-text2="...">Specyfikacja <i class="fa-solid fa-arrow-down"></i></button>
-                        <button class="printer-spec " data-text1="..." data-text2="...">Wymiary <i class="fa-solid fa-arrow-down"></i></button>
-                        <button class="printer-spec last" data-text1="..." data-text2="...">Certyfikacja <i class="fa-solid fa-arrow-down"></i></button>
-                        <button class="btn btn--red">DOWIEDZ SIĘ WIĘCEJ</button>
+                        <button class="printer-spec animate">Specyfikacja <i class="fa-solid fa-arrow-down"></i>
+                            <div class="printer-spec__text"
+                                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus odio in ipsa nesciunt voluptate architecto necessitatibus ullam, nulla aperiam iusto, officiis, ut voluptatum voluptates! Molestiae aliquid ipsa quae veritatis.">
+                            </div>
+                        </button>
+                        <button class="printer-spec animate">Wymiary <i class="fa-solid fa-arrow-down"></i>
+                            <div class="printer-spec__text"
+                                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus odio in ipsa nesciunt voluptate architecto necessitatibus ullam, nulla aperiam iusto, officiis, ut voluptatum voluptates! Molestiae aliquid ipsa quae veritatis.">
+                            </div>
+                        </button>
+                        <button class="printer-spec last animate">Certyfikacja <i class="fa-solid fa-arrow-down"></i>
+                            <div class="printer-spec__text"
+                                data-text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus odio in ipsa nesciunt voluptate architecto necessitatibus ullam, nulla aperiam iusto, officiis, ut voluptatum voluptates! Molestiae aliquid ipsa quae veritatis.">
+                            </div>
+                        </button>
+                        <button class="btn btn--red animate">DOWIEDZ SIĘ WIĘCEJ</button>
                     </div>
                 </div>
                 <div class="printers__arrow printers__arrow--right"><img src="images/down_arrow.svg" alt=""></div>
@@ -167,31 +237,50 @@
         </section>
 
         <section id="sixth-page">
+            <div class="respDiv"></div>
             <div class="sixth-page__transparent">
-                <h1>Tutaj tytuł zakładki opisy po prawej.</h1>
-             
-                <h3 class="text text--red">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                <h3>Configuration File to nowe</h3>
-                <h3>amet consectetur adipisicing elit.</h3>
-                <h3> elit con 'Esc'.</h3>
+                <h1 class="animate">Tutaj tytuł zakładki opisy po prawej.</h1>
+                <h3 class="text text--red animate">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                <h3 class="animate">Configuration File to nowe</h3>
+                <h3 class="animate">amet consectetur adipisicing elit.</h3>
+                <h3 class="animate"> elit con 'Esc'.</h3>
             </div>
             <div class="sixth-page__red-square">
-                <h1><img src="images/bialy_maly_kopniety_kwadracik.svg" alt=""> Lorem ipsum dolor</h1>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum veniam dolore obcaecati eum culpa, molestiae laborum, fuga sit aperiam suscipit doloribus est tempore natus vero recusandae ipsam. Iure, ratione!
-                Consectetur reiciendis rerum neque sint? Dolore, quia illo quis placeat est neque ducimus at debitis iure! Aperiam rem mollitia, neque blanditiis ex provident quisquam, numquam ab ad quidem recusandae amet.</h3>
+                <h1 class="animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt=""> Lorem ipsum dolor</h1>
+                <h3 class="animate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nostrum veniam
+                    dolore obcaecati
+                    eum culpa, molestiae laborum, fuga sit aperiam suscipit doloribus est tempore natus vero recusandae
+                    ipsam. Iure, ratione!
+                    Consectetur reiciendis rerum neque sint? Dolore, quia illo quis placeat est neque ducimus at debitis
+                    iure! Aperiam rem mollitia, neque blanditiis ex provident quisquam, numquam ab ad quidem recusandae
+                    amet.</h3>
                 <div class="list">
-                    <div class="list__item"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem ipsum dolor</div>
-                    <div class="list__item"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem ipsum dolor</div>
-                    <div class="list__item"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem ipsum dolor</div>
-                    <div class="list__item"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem ipsum dolor</div>
-                    <div class="list__item"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem ipsum dolor</div>
+                    <div class="list__item animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem
+                        ipsum dolor
+                    </div>
+                    <div class="list__item animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem
+                        ipsum dolor
+                    </div>
+                    <div class="list__item animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem
+                        ipsum dolor
+                    </div>
+                    <div class="list__item animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem
+                        ipsum dolor
+                    </div>
+                    <div class="list__item animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem
+                        ipsum dolor
+                    </div>
                 </div>
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorem. Harum, ex. Numquam sequi veniam nemo? Impedit officiis tempora accusamus consequuntur optio atque laboriosam consectetur quam, vero aliquam, autem nam!</h3>
+                <h3 class="animate">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, dolorem. Harum,
+                    ex. Numquam sequi
+                    veniam nemo? Impedit officiis tempora accusamus consequuntur optio atque laboriosam consectetur
+                    quam, vero aliquam, autem nam!</h3>
             </div>
+            <div class="respDiv"></div>
         </section>
 
         <section id="sponsors">
-            <div class="sponsors__flex">
+            <div class="sponsors__flex animate">
                 <h1>Nasi partnerzy</h1>
                 <img src="" alt="">
                 <img src="" alt="">
@@ -201,35 +290,36 @@
                 <img src="" alt="">
             </div>
             <div class="sponsors__red-square ">
-                <h1>Chcesz zostać naszym partnerem?</h1>
-                <button class="btn btn--transparent">Skontaktuj się z nami! -></button>
+                <h1 class="animate">Chcesz zostać naszym partnerem?</h1>
+                <button class="btn btn--transparent animate">Skontaktuj się z nami! -></button>
             </div>
         </section>
 
-        <section id="contact">
-        </section>
+
 
         <section id="footer">
-            <img src="images/logo_podstawowe.svg" alt="logo" class="logo logo--header">
-            <div class="footer__block">
+            <img src="images/logo_podstawowe.svg" alt="logo" class="footer__block logo logo--header animate">
+            <div class="footer__block animate">
                 <h1>Adres:</h1>
                 <p>R3D Motion</p>
                 <p>Ul. Nazwa ulicy 36</p>
                 <p>20-092 Lublin</p>
             </div>
-            <div class="footer__block">
-                <h1>Kontakt:</h1>
-                <p>biuro@r3dmotion.pl</p>
-                <p>+48 600 123 456</p>
+
+            <div class="notAnim footer__block animate contact-element-wrapper">
+                <h1 class="contact-element">Kontakt:</h1>
+                <p class="contact-element">biuro@r3dmotion.pl</p>
+                <p class="contact-element">+48 600 123 456</p>
             </div>
-            <div class="footer__block footer__block--bolder">
+
+            <div class="footer__block footer__block--bolder animate">
                 <h1>Produkty:</h1>
                 <p>R3D Mondo 300</p>
                 <p>R3D Mondo 500</p>
             </div>
-            <div class="footer__block ">
-                <h1>Poznaj nas lepiej:</h1>
 
+            <div class="footer__block animate">
+                <h1>Poznaj nas lepiej:</h1>
                 <img src="images/facebook.svg" alt="">
                 <img src="images/linkedin.svg" alt="">
                 <img src="images/instagram.svg" alt="">
@@ -237,4 +327,5 @@
         </section>
     </div>
 </body>
+
 </html>
