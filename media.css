@@ -6,17 +6,6 @@
   min-extra-large: 1301px;
 }
 
-@media only screen and (max-width: 560px) {
-  .header .header__menu {
-    display: none;
-  }
-  .header .header__logo {
-    width: 50%;
-  }
-  .ham-menu_wrapper .ham-menu__content {
-    height: 75%;
-  }
-}
 @media all and (min-width: 0) and (max-width: 768px) {
   body .container section {
     width: 100% !important;

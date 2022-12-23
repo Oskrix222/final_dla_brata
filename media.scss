@@ -2,25 +2,25 @@
 
 
 
-@media only screen and (max-width: $mobile) {
+// @media only screen and (max-width: $mobile) {
 
 
-  .header {
-    .header__menu {
-      display: none;
-    }
+//   .header {
+//     .header__menu {
+//       display: none;
+//     }
 
-    .header__logo {
-      width: 50%;
-    }
-  }
+//     .header__logo {
+//       width: 50%;
+//     }
+//   }
 
-  .ham-menu_wrapper {
-    .ham-menu__content {
-      height: 75%;
-    }
-  }
-}
+//   .ham-menu_wrapper {
+//     .ham-menu__content {
+//       height: 75%;
+//     }
+//   }
+// }
 
 @media all and (min-width: 0) and (max-width: $tablets) {
 
