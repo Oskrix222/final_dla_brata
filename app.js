@@ -6,7 +6,7 @@
     const downArrowSpec = document.querySelectorAll('.printer-spec');
     const animate = document.querySelectorAll('.animate')
     const printerSec = document.querySelector('#printers');
-    let isClicked = 0;
+    let isClicked = 1;
 
 
 
