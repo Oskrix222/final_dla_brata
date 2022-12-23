@@ -31,7 +31,7 @@
     filter: brightness(0) invert(1);
   }
   body .container #first-page {
-    background-image: url("images/main.jpeg");
+    background-image: url(#images/main.jpeg);
     height: 100vh;
   }
   body .container #first-page .first-page__left {
