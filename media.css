@@ -66,7 +66,7 @@
     display: none;
   }
   body .container #first-page .first-page__img {
-    position: absoulute;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
