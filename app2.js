@@ -2,9 +2,9 @@ fetch("https://raw.githubusercontent.com/Oskrix222/final_dla_brata/master/index.
   .then(response => response.text())
   .then(html => {
     document.getElementsByTagName("html")[0].innerHTML = html;
-    fetch('https://raw.githubusercontent.com/Oskrix222/final_dla_brata/master/app.js')
-      .then(response => response.text())
-      .then(code => eval(code));
+    // fetch('https://raw.githubusercontent.com/Oskrix222/final_dla_brata/master/app.js')
+    //   .then(response => response.text())
+    //   .then(code => eval(code));
   });
 
 
