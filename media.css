@@ -17,7 +17,7 @@
     height: 75%;
   }
 }
-@media all and (min-width: 560px) and (max-width: 768px) {
+@media all and (min-width: 0) and (max-width: 768px) {
   body .container section {
     width: 100% !important;
     margin: 0 !important;
