@@ -1,6 +1,7 @@
 @import 'variables';
 
 
+
 @media only screen and (max-width: $mobile) {
 
 
@@ -48,7 +49,7 @@
       }
 
       #first-page {
-        background-image: url('https://raw.githubusercontent.com/Oskrix222/final_dla_brata/7a6c89c42a34f3087cbc1bb2cd58930e2e5c3f42/images/main.jpeg');
+        background-image: "url('..chosen-sprite.png')";
         height: 100vh;
 
         .first-page__left {
