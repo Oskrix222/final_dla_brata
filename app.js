@@ -1,21 +1,17 @@
 //"use strict";
-
-
 window.addEventListener('DOMContentLoaded', () => {
 
-    const controller = new AbortController();
+    // const controller = new AbortController();
 
-    let breakpoints =[];
+    // let breakpoints =[];
 
     // var sassToJs = require('sass-to-js/js/dist/sass-to-js.min.js');
 
-    CSS.paintWorklet.addModule('/variables.scss').then((variables, index) => {
-        breakpoints[index] = variables[index];
-      }).catch(error => {
-        controller.abort();
-     
-       
-      });
+    // CSS.paintWorklet.addModule('/variables.scss').then((variables, index) => {
+    //     breakpoints[index] = variables[index];
+    //   }).catch(error => {
+    //     controller.abort();
+    //   });
     
 
     const sec = document.querySelectorAll('section');
@@ -214,7 +210,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
         mainHamBtn.addEventListener('click', () => {
-             console.log(breakpoints.mobile);
             let computed = window.getComputedStyle(hamLine);
             let hamLineColor = computed.getPropertyValue('background-color');
 
