@@ -1,5 +1,5 @@
 //"use strict";
-window.addEventListener('DOMContentLoaded', () => {
+// window.addEventListener('DOMContentLoaded', () => {
 
     // const controller = new AbortController();
 
@@ -353,4 +353,4 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     main();
-});
+// });
