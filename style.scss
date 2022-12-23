@@ -664,7 +664,7 @@ body {
 
             &::after {
                 content: "";
-                background-image: url(../images/third_page_img.png);
+                background-image: url(http://r3dmotion.pl/images/third_page_img.png);
                 background-size: cover;
             }
         }
@@ -887,7 +887,7 @@ body {
     }
 
     #sixth-page {
-        background-image: url(images/sixth-page.png);
+        background-image: url(http://r3dmotion.pl/images/sixth-page.png);
         background-size: cover;
         display: flex;
         align-items: center;
