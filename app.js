@@ -208,7 +208,6 @@ window.addEventListener('DOMContentLoaded', () => {
         const mainHamBtn = document.querySelector('.main-ham-btn');
         const hamLine = document.querySelector('.ham-btn__lines');
 
-
         mainHamBtn.addEventListener('click', () => {
             let computed = window.getComputedStyle(hamLine);
             let hamLineColor = computed.getPropertyValue('background-color');
