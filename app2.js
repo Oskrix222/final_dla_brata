@@ -1,8 +1,8 @@
-fetch("https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata/index.html")
+fetch("https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@latest/index.html")
   .then(response => response.text())
   .then(html => {
     document.getElementsByTagName("html")[0].innerHTML += html;
-    fetch('https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata/app.js')
+    fetch('https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@latest/app.js')
       .then(response => response.text())
       .then(code => eval(code));
   });
