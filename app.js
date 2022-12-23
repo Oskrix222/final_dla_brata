@@ -7,7 +7,6 @@
     const animate = document.querySelectorAll('.animate')
     const printerSec = document.querySelector('#printers');
     let isClicked = 1;
-    console.log(123);
 
 
 
