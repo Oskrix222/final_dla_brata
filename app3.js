@@ -20,8 +20,17 @@
   // }
   // xhttp.send(null);
 
-  fetch('https://raw.githubusercontent.com/Oskrix222/final_dla_brata/master/media.css')
-  .then(res => res.json())
-  .then(res => {
-    document.getElementById('message').innerHTML = res[0].commit.message
-  })
+  // fetch('https://raw.githubusercontent.com/Oskrix222/final_dla_brata/master/media.css')
+  // .then(res => res.json())
+  // .then(res => {
+  //   document.getElementById('message').innerHTML = res[0].commit.message
+  // })
+  const repo = 'Oskrix222/final_dla_brata'; // Replace with your repository name
+    const apiUrl = `https://api.github.com/repos/${repo}/commits?per_page=1`;
+
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        const commitId = data[0].sha;
+      console.log(`The last commit ID is: ${commitId}`);
+      });
