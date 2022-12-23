@@ -1,20 +1,4 @@
-//"use strict";
-// window.addEventListener('DOMContentLoaded', () => {
-
-    // const controller = new AbortController();
-
-    // let breakpoints =[];
-
-    // var sassToJs = require('sass-to-js/js/dist/sass-to-js.min.js');
-
-    // CSS.paintWorklet.addModule('/variables.scss').then((variables, index) => {
-    //     breakpoints[index] = variables[index];
-    //   }).catch(error => {
-    //     controller.abort();
-    //   });
-    
-
-    const sec = document.querySelectorAll('section');
+     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
     const contactLink = document.querySelectorAll('.contact-link');
@@ -353,4 +337,3 @@
     }
 
     main();
-// });
