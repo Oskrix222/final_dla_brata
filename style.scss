@@ -664,7 +664,7 @@ body {
 
             &::after {
                 content: "";
-                background-image: url(http://r3dmotion.pl/images/third_page_img.png);
+                background-image: url("http://r3dmotion.pl/images/third_page_img.png");
                 background-size: cover;
             }
         }
