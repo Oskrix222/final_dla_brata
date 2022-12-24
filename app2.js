@@ -34,7 +34,6 @@ function makeGithubJS(file) {
       var commitId = data[0].sha;
       var link = document.createElement('script');
       link.src =`https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commitId}/${file}`;
-      documen
     });
 }
 
