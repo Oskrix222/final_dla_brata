@@ -60,11 +60,11 @@ function makeGithubIndex(file) {
 
 
 
-
+makeGithubIndex('index.html');
 makeGithubCSS('style.css');
 makeGithubCSS('media.css');
 makeGithubJS('app.js');
-makeGithubIndex('index.html');
+
 
 
 // fetch("https://raw.githubusercontent.com/Oskrix222/final_dla_brata/master/index.html")
