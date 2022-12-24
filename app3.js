@@ -34,5 +34,5 @@ function makeGithubCSS(file) {
       xhttp.send(null);
     });
 }
-
+makeGithubCSS('style.css');
 makeGithubCSS('media.css');
