@@ -1,6 +1,11 @@
+@use "sass:math";
+
 @import 'variables';
 
 
+@function trapezium-shift($trapezium-height) {
+  @return (-1 * math.tan($trapezium-skew-angle) * $trapezium-height) / 2;
+}
 
 // @media only screen and (max-width: $mobile) {
 
@@ -25,11 +30,11 @@
 @media all and (max-width: $tablets) {
 
 
-  // body, * {
+  // body {
   //   overflow-x: hidden;
   // }
   body {
-
+    width:100%;
 
     .container {
 
@@ -51,15 +56,21 @@
       #first-page {
         background-image: url(http://r3dmotion.pl/images/main.jpeg) !important;
         height: 100vh;
+        overflow-x: hidden;
+      
 
         .first-page__left {
-          width: 100%;
+ 
+          // height:100%;
           margin: 0;
           padding: 0;
 
 
           .left__content__wrapper {
-            width: 0;
+            overflow-x:none;
+   
+
+            margin:0;
             //margin-top: 170px;
 
             .left__arrow {
@@ -67,9 +78,13 @@
             }
 
             .left__content {
-              padding: 40px;
+              // display:none;
+              padding: 33px;
               height: auto;
               overflow: visible !important;
+              width: 95vw;
+              background-color: $main-red-solid;
+
 
               h1 {
                 font-size: 2.5rem;
@@ -83,9 +98,10 @@
               }
 
               &::after {
-                width: 90vw;
-                margin: 0;
-                padding: 0;
+                display:none;
+                
+                // margin: 0;
+                // padding: 0;
               }
             }
           }
@@ -154,12 +170,28 @@
         .sixth-page__transparent {
           width: 100%;
           text-align: center;
+
           h1 {
-            width:100%;
-            margin:0;
+            width: 100%;
+            margin: 0;
             margin-bottom: 40px;
           }
 
+        }
+
+        .sixth-page__red-square {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          padding: 0;
+          //position:relative;
+          //right:20px;
+
+
+          &::before {
+            left: 2 * trapezium-shift(100%);
+            width: 100%;
+          }
         }
 
         .respDiv {
@@ -169,7 +201,7 @@
       }
 
       #printers {
-        padding: 50px 30px 50px 30px;
+        padding: 50px 20px 50px 20px;
         height: auto;
         border-top: 50px solid $main-red-solid;
         display: flex;
@@ -214,9 +246,9 @@
             height: auto;
 
             img {
-              width: 70%;
-              height: 70%;
-              margin-bottom: -180px !important;
+              width: 80%;
+              height: 80%;
+              margin-bottom: -150px !important;
               top: 0;
             }
 
@@ -227,6 +259,7 @@
               justify-content: center;
               margin: 0;
               top: 0;
+              text-align: center;
 
               //padding:50px;
               // padding-left: 
@@ -245,12 +278,27 @@
       }
 
       #footer {
-        padding:20px;
+        padding: 20px;
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 40px;
 
-        & > * {
-          margin:10px;
+        .logo {
+          margin-top: 15px;
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        &>* {
+          margin: 10px;
+          text-align: center;
+        }
+
+        .footer__block {
+          img {
+            margin: 10px;
+          }
         }
       }
     }
