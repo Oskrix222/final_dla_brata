@@ -9,52 +9,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
         integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- <script src="app2.js" defer></script> -->
     <title>R3d</title>
 </head>
 
 <body>
-    <!-- <script>
-        function makeGithubCSS(file) {
-  const repo = 'Oskrix222/final_dla_brata'; // Replace with your repository name
-  const apiUrl = `https://api.github.com/repos/${repo}/commits?per_page=1`;
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-      var commitId = data[0].sha;
-      var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commitId}/${file}`, true);
-      xhttp.onreadystatechange = function () {
-        if (xhttp.readyState === 4) {
-          if (xhttp.status === 200) {
-            var link = document.createElement('style');
-            link.innerHTML = xhttp.responseText;
-            document.getElementsByTagName('head')[0].appendChild(link);
-          }
-        }
-      }
-      xhttp.send(null);
-    });
-}
-
-
-
-function makeGithubJS(file) {
-  const repo = 'Oskrix222/final_dla_brata'; // Replace with your repository name
-  const apiUrl = `https://api.github.com/repos/${repo}/commits?per_page=1`;
-  fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-      var commitId = data[0].sha;
-      var link = document.createElement('script');
-      link.src =`https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commitId}/${file}`;
-        document.getElementsByTagName('head')[0].appendChild(link);
-    });
-}
-makeGithubCSS('style.css');
-makeGithubCSS('media.css');
-makeGithubJS('app.js');
-    </script> -->
     <div class="header">
         <div class="header__logo">
             <a href="index.html">

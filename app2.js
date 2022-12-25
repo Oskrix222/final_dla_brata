@@ -13,8 +13,10 @@ function getLastCommitId() {
 
 
 function makeGithubCSS(file, commit) {
-  var link = document.createElement('style');
-  link.innerHTML = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+  var link = document.createElement('link');
+  ("style");
+  link.rel = "stylesheet";
+  link.href = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
   document.getElementsByTagName('head')[0].appendChild(link);
 }
 
@@ -32,7 +34,7 @@ function makeGithubIndex(file, commit) {
   xhttp.onreadystatechange = function () {
     if (xhttp.readyState === 4) {
       if (xhttp.status === 200) {
-        document.getElementsByTagName("html")[0].innerHTML = xhttp.responseText;
+        document.getElementsByTagName("html")[0].innerHTML += xhttp.responseText;
       }
     }
   }

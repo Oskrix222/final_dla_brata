@@ -47,7 +47,7 @@
     display: none;
   }
   body .container #first-page .first-page__left .left__content__wrapper .left__content::after {
-    width: 100%;
+    width: 90vw;
     margin: 0;
     padding: 0;
   }
@@ -92,6 +92,20 @@
   }
   body .container #sixth-page {
     margin: 0;
+    padding: 20px;
+    flex-direction: column;
+  }
+  body .container #sixth-page .sixth-page__transparent {
+    width: 100%;
+    text-align: center;
+  }
+  body .container #sixth-page .sixth-page__transparent h1 {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+  body .container #sixth-page .respDiv {
+    display: none;
   }
   body .container #printers {
     padding: 50px 30px 50px 30px;
@@ -152,6 +166,14 @@
   body .container #printers .printers__flex .printer__wrapper .printer__content h3 {
     margin: 30px 0px 30px 0px;
     text-align: center;
+  }
+  body .container #footer {
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  body .container #footer > * {
+    margin: 10px;
   }
   body .header .header__menu {
     display: none;

@@ -22,7 +22,7 @@
 //   }
 // }
 
-@media all  and (max-width: $tablets) {
+@media all and (max-width: $tablets) {
 
 
   // body, * {
@@ -74,9 +74,8 @@
               h1 {
                 font-size: 2.5rem;
                 line-height: 57.5px;
-                
-              }
 
+              }
 
 
               &::before {
@@ -84,7 +83,7 @@
               }
 
               &::after {
-                width: 100%;
+                width: 90vw;
                 margin: 0;
                 padding: 0;
               }
@@ -97,7 +96,7 @@
         }
 
         .first-page__img {
-         display:none;    
+          display: none;
         }
       }
 
@@ -149,6 +148,24 @@
 
       #sixth-page {
         margin: 0;
+        padding: 20px;
+        flex-direction: column;
+
+        .sixth-page__transparent {
+          width: 100%;
+          text-align: center;
+          h1 {
+            width:100%;
+            margin:0;
+            margin-bottom: 40px;
+          }
+
+        }
+
+        .respDiv {
+          display: none;
+        }
+
       }
 
       #printers {
@@ -224,6 +241,16 @@
 
             }
           }
+        }
+      }
+
+      #footer {
+        padding:20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        & > * {
+          margin:10px;
         }
       }
     }
