@@ -220,6 +220,7 @@ body {
             text-transform: uppercase;
             letter-spacing: 1px;
             transition: all 0.1s ease;
+            text-align: right;
 
             &:hover {
                 color: $main-red-solid;

@@ -34,9 +34,11 @@
   //   overflow-x: hidden;
   // }
   body {
-    width:100%;
+    width: 100%;
 
     .container {
+      overflow: auto;
+      overflow-x: hidden;
 
       section {
         width: 100% !important;
@@ -45,7 +47,7 @@
 
       .down-arrow {
         position: relative;
-        top: -92.5px;
+        margin-top: -92.5px;
 
         img {
           width: 60px;
@@ -57,34 +59,42 @@
         background-image: url(http://r3dmotion.pl/images/main.jpeg) !important;
         height: 100vh;
         overflow-x: hidden;
-      
+
 
         .first-page__left {
- 
-          // height:100%;
+
+
+          width: 100% !important;
           margin: 0;
           padding: 0;
 
 
           .left__content__wrapper {
-            overflow-x:none;
-   
+            position: relative;
+            width: 100% !important;
+            min-width: 0;
+            margin: 0;
 
-            margin:0;
-            //margin-top: 170px;
+
 
             .left__arrow {
               display: none;
             }
 
             .left__content {
-              // display:none;
               padding: 33px;
               height: auto;
-              overflow: visible !important;
-              width: 95vw;
+              margin: 0 !important;
               background-color: $main-red-solid;
+              width: 80%;
+              // flex-shrink:0;
+              min-width: 320px;
 
+
+              h1,
+              h3 {
+                width: 85%;
+              }
 
               h1 {
                 font-size: 2.5rem;
@@ -98,11 +108,10 @@
               }
 
               &::after {
-                display:none;
-                
-                // margin: 0;
-                // padding: 0;
+                display: none;
               }
+
+
             }
           }
 
@@ -128,6 +137,13 @@
         .second-page__content-wrapper {
           width: 100%;
           flex-direction: column;
+
+          .content-header {
+            h1 {
+              font-size: 2.75rem;
+              line-height: 57.5px;
+            }
+          }
 
           .content-body {
             flex-direction: column;
@@ -201,14 +217,14 @@
       }
 
       #printers {
-        padding: 50px 10px 0px 10px;
+        padding: 50px 7.5px 0px 7.5px;
         height: auto;
         border-top: 50px solid $main-red-solid;
         display: flex;
         flex-direction: column;
         align-items: center;
-        
-     
+
+
 
         &>* {
           margin: 0;
@@ -258,10 +274,10 @@
               flex-direction: column;
               align-items: center;
               justify-content: center;
-              padding-left:35px;
-              padding-right:35px;
+              padding-left: 35px;
+              padding-right: 35px;
               text-align: center;
-              margin:0;
+              margin: 0;
 
               h1 {
                 margin: 5px;
@@ -272,9 +288,51 @@
                 text-align: center;
               }
 
+              .btn {
+                width: 105%;
+              }
+
             }
           }
         }
+      }
+
+      #sponsors {
+        padding: 20px;
+
+        .sponsors__flex {
+
+          h1 {
+            width: 100%;
+            text-align: center;
+            margin: 20px;
+          }
+
+          img {
+            margin: 15px;
+          }
+
+        }
+
+        .sponsors__red-square {
+          flex-direction: column;
+          padding: 0 30px 0px 30px;
+
+          
+
+          h1 {
+            width: 100%;
+            text-align: center;
+            margin-top:30px;
+
+          }
+
+          .btn {
+            margin-top: 30px;
+            margin-bottom: 30px;
+          }
+        }
+
       }
 
       #footer {
@@ -314,8 +372,15 @@
     }
 
     .ham-menu-wrapper {
+      padding: 0px 50px 0px 125px;
+
       .ham-menu__content {
+        padding: 0 !important;
         height: 75%;
+
+        a {
+          font-size: 1.5rem;
+        }
       }
     }
   }
