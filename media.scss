@@ -201,14 +201,14 @@
       }
 
       #printers {
-        padding: 50px 20px 50px 20px;
+        padding: 50px 10px 0px 10px;
         height: auto;
         border-top: 50px solid $main-red-solid;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 50px;
+        
+     
 
         &>* {
           margin: 0;
@@ -240,15 +240,16 @@
 
           .printer__wrapper {
             width: 100%;
-            padding: 50px;
+            //padding: 50px;
             margin: 0;
             padding: 0;
             height: auto;
+            // display: block;
 
             img {
               width: 80%;
               height: 80%;
-              margin-bottom: -150px !important;
+              bottom: 10px !important;
               top: 0;
             }
 
@@ -257,12 +258,11 @@
               flex-direction: column;
               align-items: center;
               justify-content: center;
-              margin: 0;
-              top: 0;
+              padding-left:35px;
+              padding-right:35px;
               text-align: center;
+              margin:0;
 
-              //padding:50px;
-              // padding-left: 
               h1 {
                 margin: 5px;
               }
