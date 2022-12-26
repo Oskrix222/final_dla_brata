@@ -37,7 +37,6 @@
     overflow-x: hidden;
     display: flex;
     align-items: center;
-    padding-top: 25px;
   }
   body .container #first-page .first-page__left {
     width: 100% !important;
@@ -104,13 +103,20 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    padding: 35px;
     width: 100%;
     box-shadow: 1px 10px 24px 0px rgba(66, 68, 90, 0.2);
   }
   body .container #second-page .second-page__content-wrapper .content-body .content-block .block__header {
     justify-content: center;
     margin-bottom: 40px;
+  }
+  body .container #second-page .second-page__content-wrapper .content-body .content-block .block__header img {
+    margin-right: 15px;
+  }
+  body .container #second-page .second-page__content-wrapper .content-body .content-block .block__header h1 {
+    overflow: visible;
+    white-space: nowrap;
   }
   body .container #second-page .second-page__content-wrapper .content-body .content-block p {
     width: 90%;
@@ -164,7 +170,8 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
     justify-content: center;
     text-align: center;
     padding: 50px;
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    color: rgb(40, 40, 40);
     box-shadow: 1px 10px 24px 0px rgba(66, 68, 90, 0.2);
   }
   body .container #printers .printers__flex {
@@ -210,12 +217,17 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
   body .container #sponsors {
     padding: 20px;
   }
+  body .container #sponsors .sponsors__flex {
+    margin-bottom: 15px;
+  }
   body .container #sponsors .sponsors__flex h1 {
     width: 100%;
     text-align: center;
     margin: 20px;
   }
   body .container #sponsors .sponsors__flex img {
+    width: 60vw;
+    height: 60vw;
     margin: 15px;
   }
   body .container #sponsors .sponsors__red-square {
@@ -226,8 +238,10 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
     width: 100%;
     text-align: center;
     margin-top: 30px;
+    font-size: 2rem;
   }
   body .container #sponsors .sponsors__red-square .btn {
+    width: 250px;
     margin-top: 30px;
     margin-bottom: 30px;
   }

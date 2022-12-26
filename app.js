@@ -40,7 +40,7 @@ function GSAPspecTextAppear(element) {
         duration: 0.5,
         ease: "power2.inOut",
         stagger: 0.5,
-        padding: 40 + "px",
+        padding: "20 15 20 15",
         scale: 1,
         left: 0
     });

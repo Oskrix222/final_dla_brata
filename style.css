@@ -1010,4 +1010,9 @@ body {
 
 .active {
   height: auto !important;
+  padding: 0;
+}
+
+.animate {
+  will-change: transform;
 }/*# sourceMappingURL=style.css.map */
