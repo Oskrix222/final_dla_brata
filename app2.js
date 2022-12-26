@@ -3,9 +3,10 @@ function getLastCommitId() {
     .then(response => response.json())
     .then(data => {
       let lastCommit = data[0].sha;
-      makeGithubIndex('index.html', lastCommit);
+     
       makeGithubCSS('style.css', lastCommit);
-      makeGithubCSS('media.css', lastCommit);
+      makeGithubCSS('media.css', lastCommit); 
+      makeGithubIndex('index.html', lastCommit);
       makeGithubJS('app.js', lastCommit);
     })
 }

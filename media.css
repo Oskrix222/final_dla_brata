@@ -10,6 +10,10 @@
   body {
     width: 100%;
   }
+  body .main-ham-btn {
+    right: 10px;
+    top: 5px;
+  }
   body .container {
     overflow: auto;
     overflow-x: hidden;
@@ -20,7 +24,7 @@
   }
   body .container .down-arrow {
     position: relative;
-    margin-top: -92.5px;
+    margin-top: -65px;
   }
   body .container .down-arrow img {
     width: 60px;
@@ -29,7 +33,11 @@
   body .container #first-page {
     background-image: url(http://r3dmotion.pl/images/main.jpeg) !important;
     height: 100vh;
+    min-height: 730px;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
   }
   body .container #first-page .first-page__left {
     width: 100% !important;
@@ -59,7 +67,7 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
   }
   body .container #first-page .first-page__left .left__content__wrapper .left__content h1 {
     font-size: 2.5rem;
-    line-height: 57.5px;
+    line-height: 50px;
   }
   body .container #first-page .first-page__left .left__content__wrapper .left__content::before {
     display: none;
@@ -242,11 +250,17 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
   body .container #footer .footer__block img {
     margin: 10px;
   }
+  body .header {
+    height: 70px;
+  }
   body .header .header__menu {
     display: none;
   }
   body .header .header__logo {
     width: 50%;
+  }
+  body .ham-btn {
+    width: 100px;
   }
   body .ham-menu-wrapper {
     padding: 0px 50px 0px 125px;

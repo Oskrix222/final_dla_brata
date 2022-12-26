@@ -231,6 +231,7 @@ body {
   font-weight: 800;
 }
 .header .lng-ham-btns .ham-btn {
+  height: 100%;
   position: relative;
   z-index: 110;
 }
