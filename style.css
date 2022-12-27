@@ -621,27 +621,11 @@ body {
   font-weight: 300;
   margin: 40px 0px 40px 0px;
 }
-.container #printers .printers__flex .printer__wrapper .printer__content .printer-spec {
-  border-top: 2px solid rgb(220, 220, 220) !important;
-}
-.container #printers .printers__flex .printer__wrapper .printer__content .printer-spec::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background-color: rgb(228, 2, 46);
-  z-index: 10;
-  transition: 0.25s ease all;
-}
-.container #printers .printers__flex .printer__wrapper .printer__content .printer-spec:hover::before {
-  width: 100%;
-}
 .container #printers .printers__flex .printer__wrapper .printer__content .last {
   border-bottom: 2px solid rgb(213, 213, 213) !important;
 }
 .container #printers .printers__flex .printer__wrapper .printer__content .printer-spec {
+  border-top: 2px solid rgb(220, 220, 220) !important;
   width: 100%;
   padding: 10px 15px 10px 15px;
   font-size: 1.7rem;

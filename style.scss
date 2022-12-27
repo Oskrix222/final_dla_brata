@@ -12,9 +12,9 @@ body {
 html,
 body {
     height: 100%;
-    width:100%;
-    margin:0;
-    padding:0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 
@@ -101,7 +101,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Montserrat, Helvetica, sans-serif;
-   // overflow-x:hidden;
+    // overflow-x:hidden;
 }
 
 
@@ -154,7 +154,7 @@ body {
 
 .ham-menu-wrapper {
     display: none;
-   height: 100%;
+    height: 100%;
     opacity: 0;
     padding: 0px 50px 0px 150px;
     position: fixed;
@@ -162,7 +162,7 @@ body {
     right: -300px;
     z-index: 100;
     align-items: center;
-   
+
 
     &::after {
         content: "";
@@ -201,15 +201,16 @@ body {
         overflow: visible;
         mix-blend-mode: multiply;
     }
+
     .ham-menu__content {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
         width: 100%;
-        height:60%;
+        height: 60%;
         padding: 40px 20px 40px 20px;
-        flex-shrink:0;
+        flex-shrink: 0;
 
 
         a {
@@ -271,10 +272,10 @@ body {
 
             img {
                 transition: all .5s ease;
-                max-width:400px;
+                max-width: 400px;
                 width: 55%;
                 //height: 55%;
-                
+
             }
         }
 
@@ -296,15 +297,15 @@ body {
             text-transform: uppercase;
             font-weight: 1rem;
             transition: all .25s ease;
-            
-           // transition: scale 0s ease 0s;
+
+            // transition: scale 0s ease 0s;
 
             display: flex;
             align-items: center;
             justify-content: space-around;
             transform-origin: center;
-          //  transition: none;
-            
+            //  transition: none;
+
 
             &:hover {
                 font-size: 1.15rem;
@@ -393,10 +394,10 @@ body {
 }
 
 .container {
-    
+
     min-width: 100%;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 
     &>*:not(#second-page) {
         width: 100%;
@@ -447,7 +448,7 @@ body {
                 min-width: 550px;
                 flex-shrink: 0;
                 display: relative;
-                
+
 
                 .left__arrow {
                     width: 35px;
@@ -465,20 +466,20 @@ body {
                     width: auto;
                     height: 100%;
                     padding: 50px 5px 50px 200px;
-                    min-width:740px;
-                    
-                     mix-blend-mode: multiply;
-                    
-            
+                    min-width: 740px;
+
+                    mix-blend-mode: multiply;
+
+
 
                     &::after {
                         // background-color: rgb(228,2,46);
                         // mix-blend-mode: multiply;
-                        
+
                         margin-right: 20px;
                         // border-right: 20px solid transparent;
                         // box-shadow: 40px 0px 0px 0px rgba(0,0,0,0.75);
-                       
+
                     }
 
                     &::before {
@@ -487,16 +488,16 @@ body {
                         display: block;
                         position: absolute;
                         right: 0;
-                        flex-shrink:0;
+                        flex-shrink: 0;
                         top: 0;
                         bottom: 0;
-                        
+
                         transform: skew($trapezium-skew-angle);
                         height: 100%;
                         width: 30px;
                         background-color: $main-red-solid;
-                        
-                        
+
+
                     }
 
                     h1 {
@@ -532,8 +533,8 @@ body {
     }
 
     #second-page {
-        position:relative;
-        z-index:20;
+        position: relative;
+        z-index: 20;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -660,7 +661,7 @@ body {
     }
 
     #third-page {
-        z-index:10;
+        z-index: 10;
         position: relative;
         top: -50px;
         display: flex;
@@ -824,31 +825,14 @@ body {
                         margin: 40px 0px 40px 0px;
                     }
 
-                    .printer-spec {
-                        border-top: 2px solid rgb(220, 220, 220) !important;
 
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: -3px;
-                            left: 0;
-                            width: 0;
-                            height: 1.5px;
-                            background-color: $main-red-solid;
-                            z-index: 10;
-                            transition: .25s ease all;
-                        }
-
-                        &:hover::before {
-                            width: 100%;
-                        }
-                    }
 
                     .last {
                         border-bottom: 2px solid rgb(213, 213, 213) !important;
                     }
 
                     .printer-spec {
+                        border-top: 2px solid rgb(220, 220, 220) !important;
                         width: 100%;
                         padding: 10px 15px 10px 15px;
                         font-size: 1.7rem;
@@ -859,11 +843,10 @@ body {
                         position: relative;
                         transition: all ease .25s;
 
-
                         &:hover {
                             cursor: pointer;
                             transform: scale(1.015);
-
+                            
                             i {
                                 color: $main-red-solid;
                             }
@@ -876,8 +859,7 @@ body {
                             position: relative;
                             display: none;
                             opacity: 0;
-                            height:auto;
-                            
+                            height: auto;
                             transform: scale(0.5);
                             left: -50px;
 
@@ -920,7 +902,7 @@ body {
             background-color: transparent;
             display: flex;
             flex-direction: column;
-           
+
 
 
             h1 {
@@ -951,16 +933,17 @@ body {
             flex-shrink: 0;
             margin: 10px;
             //max-height:850px;
-            display:flex;align-items: left;
-            flex-direction:column;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
             min-width: 600px;
-             
+
 
             &>* {
-                position:relative;
+                position: relative;
                 margin-bottom: 30px;
                 flex-shrink: 0;
-                
+
             }
 
             &::before {
@@ -975,13 +958,13 @@ body {
                 background-color: $main-red-solid;
                 overflow: auto;
                 transform: skewX(-11deg);
-                
+
             }
 
             h1 {
                 font-size: 2rem;
                 color: white;
-                white-space:nowrap;
+                white-space: nowrap;
 
                 img {
                     margin-right: 50px;
@@ -1119,7 +1102,7 @@ body {
 .border-none {
     border: none !important;
     transition: 0.3s scale ease;
-   
+
 }
 
 .btn {
@@ -1228,9 +1211,10 @@ body {
 }
 
 .active {
-    height:auto !important;
-    padding:0;
+    height: auto !important;
+    padding: 0;
 }
+
 .animate {
     will-change: transform;
 }
