@@ -27,6 +27,7 @@ function makeGithubCSS(file, commit) {
 function makeGithubJS(file, commit) {
   var link = document.createElement('script');
   link.src = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+  link.setAttribute('defer', '');
   document.getElementsByTagName('head')[0].appendChild(link);
 };
 
