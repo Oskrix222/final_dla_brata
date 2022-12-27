@@ -7,7 +7,11 @@ function getLastCommitId() {
       makeGithubCSS('style.css', lastCommit);
       makeGithubCSS('media.css', lastCommit); 
       makeGithubIndex('index.html', lastCommit);
-      makeGithubJS('app.js', lastCommit);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        makeGithubJS('app.js', lastCommit);
+      });
+        
     })
 }
 
