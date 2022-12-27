@@ -6,16 +6,16 @@ function getLastCommitId() {
      
       makeGithubCSS('style.css', lastCommit);
       makeGithubCSS('media.css', lastCommit); 
+
       makeGithubIndex('index.html', lastCommit);
 
-      document.addEventListener("DOMContentLoaded", function () {
+      if(document.readyState) {
         makeGithubJS('app.js', lastCommit);
-      });
-        
+      } else {
+        console.log("loading");
+      }
     })
 }
-
-
 
 function makeGithubCSS(file, commit) {
   var link = document.createElement('link');
