@@ -54,11 +54,12 @@
   }
   body .container #first-page .first-page__left .left__content__wrapper .left__content {
     padding: 33px;
+    padding-right: 60px;
     height: auto;
     margin: 0 !important;
-    background-color: rgb(228, 2, 46);
     width: 80%;
-    min-width: 320px;
+    min-width: 340px;
+    overflow: hidden;
   }
   body .container #first-page .first-page__left .left__content__wrapper .left__content h1,
 body .container #first-page .first-page__left .left__content__wrapper .left__content h3 {
@@ -72,7 +73,8 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
     display: none;
   }
   body .container #first-page .first-page__left .left__content__wrapper .left__content::after {
-    display: none;
+    content: "";
+    left: -16.5223262767%;
   }
   body .container #first-page .first-page__left .menu {
     display: none;
@@ -126,33 +128,41 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
   }
   body .container #sixth-page {
     margin: 0;
-    padding: 20px;
+    padding: 40px 0 0 0;
     flex-direction: column;
   }
   body .container #sixth-page .sixth-page__transparent {
     width: 100%;
     text-align: center;
   }
+  body .container #sixth-page .sixth-page__transparent > * {
+    width: calc(100% - 22.5px);
+    margin: 12.5px;
+  }
   body .container #sixth-page .sixth-page__transparent h1 {
-    width: 100%;
-    margin: 0;
     margin-bottom: 40px;
+    font-size: 2.5rem;
   }
   body .container #sixth-page .sixth-page__red-square {
     width: 100%;
+    margin: 0;
+    margin-top: 30px;
     height: 100%;
-    overflow: hidden;
-    padding: 0;
+    padding: 45px;
+    min-width: 0;
+    background-color: rgb(228, 2, 46);
   }
-  body .container #sixth-page .sixth-page__red-square::before {
-    left: 19.4380309138%;
-    width: 100%;
+  body .container #sixth-page .sixth-page__red-square h1 {
+    white-space: normal;
   }
-  body .container #sixth-page .respDiv {
+  body .container #sixth-page .sixth-page__red-square h1 img {
+    margin-right: 20px;
+  }
+  body .container #sixth-page .sixth-page__red-square::before, body .container #sixth-page .sixth-page__red-square .respDiv {
     display: none;
   }
   body .container #printers {
-    padding: 50px 7.5px 0px 7.5px;
+    padding: 50px 7.5px 40px 7.5px;
     height: auto;
     border-top: 50px solid rgb(228, 2, 46);
     display: flex;
@@ -178,6 +188,7 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
     flex-direction: column;
     gap: 50px;
     top: 0;
+    height: auto;
   }
   body .container #printers .printers__flex .printers__arrow {
     display: none;
@@ -191,8 +202,7 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
   body .container #printers .printers__flex .printer__wrapper img {
     width: 80%;
     height: 80%;
-    bottom: 10px !important;
-    top: 0;
+    margin-bottom: -180px;
   }
   body .container #printers .printers__flex .printer__wrapper .printer__content {
     display: flex;
@@ -203,6 +213,7 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
     padding-right: 35px;
     text-align: center;
     margin: 0;
+    top: 0;
   }
   body .container #printers .printers__flex .printer__wrapper .printer__content h1 {
     margin: 5px;
@@ -272,6 +283,16 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
   }
   body .header .header__logo {
     width: 50%;
+  }
+  body .header .header__logo img {
+    min-width: 120px;
+    margin: 5px;
+  }
+  body .header .lng-ham-btns .lng-ham-btns__btns {
+    width: 75px;
+  }
+  body .header .lng-ham-btns .lng-ham-btns__btns a {
+    font-size: 0.875rem;
   }
   body .ham-btn {
     width: 100px;
