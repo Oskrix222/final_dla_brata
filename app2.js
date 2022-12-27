@@ -6,9 +6,7 @@ function getLastCommitId() {
      
       makeGithubCSS('style.css', lastCommit);
       makeGithubCSS('media.css', lastCommit); 
-
       makeGithubIndex('index.html', lastCommit);
-
       if(document.readyState) {
         makeGithubJS('app.js', lastCommit);
       } else {

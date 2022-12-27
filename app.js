@@ -335,7 +335,7 @@ function main() {
     downArrowScroll(downArrow, secPage);
 }
 
-if (document.readyState) {
+window.addEventListener('load', function() {
     main();
-  }
+  });
 

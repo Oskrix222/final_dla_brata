@@ -385,7 +385,6 @@ body {
   justify-content: space-around;
   padding: 40px 40px 100px 40px;
   width: calc(100vw - 110px);
-  margin-top: -50px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -637,6 +636,7 @@ body {
   transition: all ease 0.25s;
 }
 .container #printers .printers__flex .printer__wrapper .printer__content .printer-spec:hover {
+  border: rgb(228, 2, 46);
   cursor: pointer;
   transform: scale(1.015);
 }
@@ -849,6 +849,7 @@ body {
   border: 2.375px solid;
   padding: 20px 30px 20px 30px;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   font-size: 1.125rem;
   transition: 0.25s ease all;

@@ -335,6 +335,6 @@ function main() {
 }
 
 
-if (document.readyState) {
+window.addEventListener('load', function() {
   main();
-}
+});
