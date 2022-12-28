@@ -349,7 +349,7 @@ function main() {
   makePrinterSpec();
   downArrowScroll(downArrow, secPage);
 }
-main();
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
     main();
