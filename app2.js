@@ -43,6 +43,44 @@ function makeGithubIndex(file, commit) {
 }
 getLastCommitId();
 
+function makeSite() {
+
+
+  function getLastCommitId() {
+      fetch('https://api.github.com/repos/Oskrix222/final_dla_brata/commits')
+          .then(response => response.json())
+          .then(data => {
+              let lastCommit = data[0].sha;
+
+              makeGithubCSS('style.css', lastCommit);
+              makeGithubCSS('media.css', lastCommit);
+              makeGithubJS('app.js', lastCommit)
+          })
+  }
+
+  function makeGithubCSS(file, commit) {
+      var link = document.createElement('link');
+      ("style");
+      link.rel = "stylesheet";
+      link.href = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+      document.getElementsByTagName('head')[0].appendChild(link);
+  }
+
+
+  function makeGithubJS(file, commit) {
+      var link = document.createElement('script');
+      link.src = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+      link.setAttribute('defer', '');
+      link.setAttribute('async', 'true');
+      document.getElementsByTagName('body')[0].appendChild(link);
+  };
+
+ 
+  
+} window.onload = function () {
+   makeSite();
+  }
+
 
 
 
