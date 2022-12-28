@@ -9,6 +9,7 @@
 
 body {
   position: absolute;
+  overflow-x: hidden;
 }
 
 html,
@@ -533,7 +534,6 @@ body {
 }
 .container #printers {
   width: 100%;
-  height: 1500px;
   background-color: rgb(245, 245, 245);
   padding-bottom: 20px;
 }
@@ -596,6 +596,7 @@ body {
   z-index: 10;
   width: 400px;
   height: 600px;
+  margin-bottom: -180px;
 }
 .container #printers .printers__flex .printer__wrapper .printer__img--smaller {
   transform: scale(0.875) translateY(15px);
@@ -603,7 +604,6 @@ body {
 .container #printers .printers__flex .printer__wrapper .printer__content {
   z-index: 0;
   position: relative;
-  top: -180px;
   margin-bottom: 100px;
   padding-top: 150px;
   padding: 175px 60px 80px 60px;
@@ -671,29 +671,32 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
-  padding: 300px 75px 100px 75px;
-  margin-top: -150px;
+  padding: 300px 100px 100px 100px;
+  gap: 25px;
+  margin-top: -425px;
   z-index: -100;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .container #sixth-page .sixth-page__transparent {
-  width: 45%;
-  height: 100%;
+  width: 40%;
   background-color: transparent;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
+  margin-right: 25px;
+}
+.container #sixth-page .sixth-page__transparent > * {
+  margin-bottom: 30px;
+  color: white;
 }
 .container #sixth-page .sixth-page__transparent h1 {
-  color: white;
+  position: relative;
+  bottom: 20px;
+  left: 15px !important;
   font-size: 3rem;
-  margin-left: 20px;
-  margin-bottom: 100px;
-  width: 50%;
 }
 .container #sixth-page .sixth-page__transparent h3 {
-  color: white;
   font-size: 1.5rem;
-  margin-bottom: 20px;
 }
 .container #sixth-page .sixth-page__transparent .text--red {
   color: rgb(228, 2, 46);
@@ -701,13 +704,12 @@ body {
 .container #sixth-page .sixth-page__red-square {
   padding: 50px 150px 50px 150px;
   transform: translateZ(-1px);
-  width: 50vw;
+  width: 45%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-  flex-shrink: 0;
-  margin: 10px;
+  flex-shrink: 1;
   display: flex;
   align-items: left;
   flex-direction: column;
@@ -818,6 +820,8 @@ body {
   align-items: top;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 .container #footer img {
   width: 400px;

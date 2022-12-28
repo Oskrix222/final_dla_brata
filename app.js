@@ -17,7 +17,8 @@ const observer = new IntersectionObserver((entries) => {
         ease: "power2.inOut",
         stagger: 0.25,
         delay: 0.125,
-        left: 0 + "px"
+        
+        transform: "translateX(0px)"
       })
     } else {
       gsap.to(entry.target, {
@@ -26,7 +27,7 @@ const observer = new IntersectionObserver((entries) => {
         ease: "power2.inOut",
         stagger: 0.25,
         delay: 0.125,
-        left: 75 + "px"
+        transform: "translateX(75px)"
       })
     }
   });
@@ -343,7 +344,6 @@ function downArrowScroll(element, targetElement) {
 function main() {
   animate.forEach((section) => observer.observe(section));
   window.addEventListener('scroll', activeMenu);
-
   makeHamburgerMenu();
   makeContactBlink();
   makePrinterSpec();
