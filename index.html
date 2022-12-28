@@ -12,9 +12,9 @@
     <title>R3d</title>
 </head>
 
-<body>
+<body onload="makeSite()">
 
-    
+
     <div class="header">
         <div class="header__logo">
             <a href="index.html">
@@ -48,7 +48,7 @@
     </button>
 
     <div class="ham-menu-wrapper">
-        <div class="ham-menu__content"> 
+        <div class="ham-menu__content">
             <a href="#first-page" class="menu__link border-none menu__link--active">Home</a>
             <a href="#second-page" class="menu__link border-none">Drukarki 3D</a>
             <a href="#printers" class="menu__link border-none">Druk 3D na zlecenie</a>
@@ -65,7 +65,7 @@
                     <div class="left__content clipped__left">
                         <h1>Rozwiązania dające nowe możliwości.</h1>
                         <h3>Drukarki mondo to nowe możliwości prototypowania przy najlepszy7m stosunku ceny do jakości.
-                          </h3>
+                        </h3>
                         <button class="btn btn--transparent">WIĘCEJ <i class="fa-solid fa-arrow-right"></i></button>
 
                     </div>
@@ -257,7 +257,7 @@
                     </div>
 
 
-                    
+
                     <div class="list__item animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem
                         ipsum dolor
                     </div>
@@ -327,37 +327,40 @@
         </section>
     </div>
     <script>
-        function getLastCommitId() {
-  fetch('https://api.github.com/repos/Oskrix222/final_dla_brata/commits')
-    .then(response => response.json())
-    .then(data => {
-      let lastCommit = data[0].sha;
-     
-      makeGithubCSS('style.css', lastCommit);
-      makeGithubCSS('media.css', lastCommit);
-      makeGithubJS('app.js', lastCommit)
-    })
-}
-
-function makeGithubCSS(file, commit) {
-  var link = document.createElement('link');
-  ("style");
-  link.rel = "stylesheet";
-  link.href = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
-  document.getElementsByTagName('head')[0].appendChild(link);
-}
+        function makeSite() {
 
 
-function makeGithubJS(file, commit) {
-  var link = document.createElement('script');
-  link.src = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
-  link.setAttribute('defer', '');
-  link.setAttribute('async', 'true');
-  document.getElementsByTagName('body')[0].appendChild(link);
-};
+            function getLastCommitId() {
+                fetch('https://api.github.com/repos/Oskrix222/final_dla_brata/commits')
+                    .then(response => response.json())
+                    .then(data => {
+                        let lastCommit = data[0].sha;
 
-getLastCommitId();
+                        makeGithubCSS('style.css', lastCommit);
+                        makeGithubCSS('media.css', lastCommit);
+                        makeGithubJS('app.js', lastCommit)
+                    })
+            }
 
+            function makeGithubCSS(file, commit) {
+                var link = document.createElement('link');
+                ("style");
+                link.rel = "stylesheet";
+                link.href = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+                document.getElementsByTagName('head')[0].appendChild(link);
+            }
+
+
+            function makeGithubJS(file, commit) {
+                var link = document.createElement('script');
+                link.src = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+                link.setAttribute('defer', '');
+                link.setAttribute('async', 'true');
+                document.getElementsByTagName('body')[0].appendChild(link);
+            };
+
+            getLastCommitId();
+        }
     </script>
 </body>
 
