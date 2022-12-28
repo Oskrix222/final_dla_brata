@@ -44,6 +44,10 @@ body {
     transform: translateY(0px);
   }
 }
+.loadOverlay {
+  display: none;
+}
+
 .main-ham-btn {
   z-index: 110;
   position: fixed;
