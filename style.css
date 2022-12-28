@@ -65,6 +65,8 @@ body {
 }
 
 .animation-box {
+  position: relative;
+  left: 22.5px;
   width: 200px;
   height: 200px;
   display: flex;
@@ -207,6 +209,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-shrink: 0;
 }
 .header .header__logo a {
   width: 100%;
@@ -243,6 +246,9 @@ body {
   align-items: center;
   justify-content: space-around;
   transform-origin: center;
+  height: 100%;
+  text-align: center;
+  line-height: 22.5px;
 }
 .header .header__menu .menu__link:hover {
   font-size: 1.15rem;
@@ -333,7 +339,7 @@ body {
 }
 .container #first-page .first-page__left {
   z-index: 10;
-  width: 445.95px;
+  width: 450px;
   height: calc(100% - 85px);
   display: flex;
   align-items: left;
@@ -540,6 +546,7 @@ body {
   height: 500px;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 .container #third-page .third-page__img {
   height: 100%;
@@ -555,7 +562,7 @@ body {
   height: 100%;
   margin-left: -9.7190154569%;
   transform: translateZ(-1px);
-  overflow: hidden;
+  overflow: visible;
   display: flex;
   align-items: center;
   padding: 100px;

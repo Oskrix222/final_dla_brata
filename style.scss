@@ -7,7 +7,6 @@
 
 body {
     position: absolute;
-    // overflow-x: hidden;
 }
 
 html,
@@ -136,6 +135,8 @@ body {
 }
 
 .animation-box {
+    position:relative;
+    left:22.5px;
     width:200px;
     height:200px;
     display:flex;
@@ -298,6 +299,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-shrink: 0;
 
         a {
             width: 100%;
@@ -339,14 +341,13 @@ body {
             text-transform: uppercase;
             font-weight: 1rem;
             transition: all .25s ease;
-
-            // transition: scale 0s ease 0s;
-
             display: flex;
             align-items: center;
             justify-content: space-around;
             transform-origin: center;
-            //  transition: none;
+            height:100%;
+            text-align: center;
+            line-height:22.5px;
 
 
             &:hover {
@@ -456,7 +457,7 @@ body {
 
         .first-page__left {
             z-index: 10;
-            width: 445.95px;
+            width: 450px;
             height: calc(100% - 85px);
             display: flex;
             align-items: left;
@@ -714,6 +715,7 @@ body {
         height: 500px;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
 
         .third-page__img {
             height: 100%;
@@ -731,7 +733,7 @@ body {
             height: 100%;
             margin-left: -1 * trapezium-shift(100%);
             transform: translateZ(-1px);
-            overflow: hidden;
+            overflow: visible;
             display: flex;
             align-items: center;
             padding: 100px;
