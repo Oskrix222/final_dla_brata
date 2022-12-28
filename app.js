@@ -350,7 +350,4 @@ function main() {
   downArrowScroll(downArrow, secPage);
 }
 
-
-document.addEventListener("DOMContentLoaded", function(event) {
-    main();
-});
+main();
