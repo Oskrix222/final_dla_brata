@@ -83,15 +83,8 @@ const makePrinterSpec = () => {
         element.lastElementChild.innerHTML = element.lastElementChild.dataset.text;
         GSAPArrowRotate(element.firstElementChild, 180, .175);
 
-        // if ((index == 0 || index == 1) && isClicked > 1) {
-        //   addPrintersHeight(200)
-        // }
-        // if (index > 1) {
-        //   addPrintersHeight(200)
-        // }
-
-
-      } else {
+      } 
+      else {
         if (index == 0 || index == 1) {
           isClicked--;
         }
@@ -100,14 +93,6 @@ const makePrinterSpec = () => {
         GSAPspecHide(element.lastElementChild);
         element.lastElementChild.innerHTML = "";
         GSAPArrowRotate(element.firstElementChild, 0, .175);
-
-
-        // if ((index == 1 || index == 0) && isClicked == 1) {
-        //   addPrintersHeight(-200)
-        // }
-        // if (index > 1) {
-        //   addPrintersHeight(-200)
-        // }
       }
     });
   });
@@ -323,30 +308,13 @@ function downArrowScroll(element, targetElement) {
   });
 }
 
-
-
-// function makeMenu() {
-//     navLinks.forEach((link) => {
-//         link.addEventListener('click', function (e) {
-//             e.preventDefault();
-//             const id = this.getAttribute('href');
-//             setTimeout(() => {
-//                 window.focus();
-//                 document.querySelector(id).scrollIntoView({
-//                     behavior: 'smooth'
-//                 });
-//             }, 50);
-//         });
-//     });
-// }
-
 function main() {
   animate.forEach((section) => observer.observe(section));
   window.addEventListener('scroll', activeMenu);
-
   makeHamburgerMenu();
   makeContactBlink();
   makePrinterSpec();
   downArrowScroll(downArrow, secPage);
 }
+
 main();

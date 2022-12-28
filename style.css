@@ -44,8 +44,52 @@ body {
     transform: translateY(0px);
   }
 }
+@-webkit-keyframes levitating2 {
+  50% {
+    transform: translate(4px, -11px) scale(1.05);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+@keyframes levitating2 {
+  50% {
+    transform: translate(4px, -11px) scale(1.05);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
 .loadOverlay {
   display: none;
+}
+
+.animation-box {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animation-box > * {
+  position: relative;
+  -webkit-animation: levitating2 1.25s ease-in-out infinite;
+          animation: levitating2 1.25s ease-in-out infinite;
+}
+.animation-box .first {
+  width: 60px;
+}
+.animation-box .second {
+  right: 20px;
+  width: 55px;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+.animation-box .third {
+  right: 36.25px;
+  width: 45px;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 
 .main-ham-btn {

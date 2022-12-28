@@ -45,7 +45,6 @@ getLastCommitId();
 
 function makeSite() {
 
-
   function getLastCommitId() {
       fetch('https://api.github.com/repos/Oskrix222/final_dla_brata/commits')
           .then(response => response.json())
