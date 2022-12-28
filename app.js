@@ -9,6 +9,7 @@
 // let isClicked = 1;
 function main() {
     
+    
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
