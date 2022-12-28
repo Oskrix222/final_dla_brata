@@ -130,6 +130,7 @@ body .container #first-page .first-page__left .left__content__wrapper .left__con
     margin: 0;
     padding: 40px 0 0 0;
     flex-direction: column;
+    flex-wrap: nowrap;
   }
   body .container #sixth-page .sixth-page__transparent {
     width: 100%;

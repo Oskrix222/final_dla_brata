@@ -17,8 +17,8 @@ const observer = new IntersectionObserver((entries) => {
         ease: "power2.inOut",
         stagger: 0.25,
         delay: 0.125,
+        left: 0 + "px",
         
-        transform: "translateX(0px)"
       })
     } else {
       gsap.to(entry.target, {
@@ -27,7 +27,7 @@ const observer = new IntersectionObserver((entries) => {
         ease: "power2.inOut",
         stagger: 0.25,
         delay: 0.125,
-        transform: "translateX(75px)"
+        left: 75 + "px"
       })
     }
   });
@@ -350,3 +350,7 @@ function main() {
   downArrowScroll(downArrow, secPage);
 }
 main();
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    main();
+});

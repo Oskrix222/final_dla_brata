@@ -202,7 +202,8 @@
       #sixth-page {
         margin: 0;
         padding: 40px 0 0 0;
-        flex-direction: column;
+        flex-direction: column; 
+        flex-wrap: nowrap;
 
         .sixth-page__transparent {
           width: 100%;
@@ -229,6 +230,7 @@
           padding: 45px;
           min-width: 0;
           background-color: $main-red-solid;
+         
 
 
           h1 {
