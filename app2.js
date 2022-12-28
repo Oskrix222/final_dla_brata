@@ -7,11 +7,7 @@ function getLastCommitId() {
       makeGithubCSS('style.css', lastCommit);
       makeGithubCSS('media.css', lastCommit); 
       makeGithubIndex('index.html', lastCommit);
-      if(document.readyState) {
-        makeGithubJS('app.js', lastCommit);
-      } else {
-        console.log("loading");
-      }
+      makeGithubJS('app.js', lastCommit)
     })
 }
 
@@ -28,6 +24,7 @@ function makeGithubJS(file, commit) {
   var link = document.createElement('script');
   link.src = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
   link.setAttribute('defer', '');
+  link.setAttribute('async', 'true');
   document.getElementsByTagName('body')[0].appendChild(link);
 };
 
@@ -37,15 +34,13 @@ function makeGithubIndex(file, commit) {
   xhttp.open("GET", `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`, true);
   xhttp.onreadystatechange = function () {
     if (xhttp.readyState === 4) {
-      if (xhttp.status === 200) {
+      if (xhttp.status === 200) { 
         document.getElementsByTagName("html")[0].innerHTML += xhttp.responseText;
       }
     }
   }
   xhttp.send(null);
 }
-
-
 getLastCommitId();
 
 

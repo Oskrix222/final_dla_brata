@@ -8,6 +8,7 @@
 // const printerSec = document.querySelector('#printers');
 // let isClicked = 1;
 function main() {
+    
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
@@ -363,6 +364,7 @@ function main() {
 
 if (document.readyState !== 'loading') {
     console.log('document is already ready, just execute code here');
+    
     main();
 } else {
     document.addEventListener('DOMContentLoaded', function () {
