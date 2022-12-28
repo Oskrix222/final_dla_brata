@@ -12,7 +12,7 @@
     <title>R3d</title>
 </head>
 
-<body onload="makeSite()">
+<body onload="makeSite();"">
 
 
     <div class="header">
@@ -358,8 +358,12 @@
                 link.setAttribute('async', 'true');
                 document.getElementsByTagName('body')[0].appendChild(link);
             };
-            getLastCommitId();
-        }
+
+           
+            
+        } window.onload = function () {
+             makeSite();
+            }
     </script>
 </body>
 
