@@ -189,7 +189,21 @@ function hamClickedStop() {
 function makeHamburgerMenu() {
   const mainHamBtn = document.querySelector('.main-ham-btn');
   const hamLine = document.querySelector('.ham-btn__lines');
+  const hamMenuLinks = document.querySelectorAll('.menu__link');
 
+  hamMenuLinks.forEach((element) => {
+    element.addEventListener('click', () => {
+      gsap.to(".ham-menu-wrapper", {
+        display: "none",
+        duration: 0.5,
+        ease: "power2.inOut",
+        opacity: 0,
+        right: -300 + "px",
+        delay: 0.35
+      });
+      hamClickedStop();
+    });
+  });
   mainHamBtn.addEventListener('click', () => {
     let computed = window.getComputedStyle(hamLine);
     let hamLineColor = computed.getPropertyValue('background-color');
@@ -204,6 +218,7 @@ function makeHamburgerMenu() {
         right: 0,
       });
     } else {
+
       hamClickedStop();
       gsap.to(".ham-menu-wrapper", {
         display: "none",
@@ -328,13 +343,10 @@ function downArrowScroll(element, targetElement) {
 function main() {
   animate.forEach((section) => observer.observe(section));
   window.addEventListener('scroll', activeMenu);
+
   makeHamburgerMenu();
   makeContactBlink();
   makePrinterSpec();
   downArrowScroll(downArrow, secPage);
 }
-
-
-window.addEventListener('load', function() {
-  main();
-});
+main();
