@@ -1,15 +1,6 @@
-// const sec = document.querySelectorAll('section');
-// const navLinks = document.querySelectorAll('.menu__link');
-// const secPage = document.querySelector('#second-page');
-// const contactLink = document.querySelectorAll('.contact-link');
-// const downArrow = document.querySelector('.down-arrow');
-// const downArrowSpec = document.querySelectorAll('.printer-spec');
-// const animate = document.querySelectorAll('.animate')
-// const printerSec = document.querySelector('#printers');
-// let isClicked = 1;
+
 function main() {
-    
-    
+
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
@@ -19,6 +10,7 @@ function main() {
     const animate = document.querySelectorAll('.animate')
     const printerSec = document.querySelector('#printers');
     let isClicked = 1;
+    
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {

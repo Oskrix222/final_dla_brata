@@ -489,7 +489,7 @@ body {
             .left__content__wrapper {
                 margin-top: 170px;
                 width: 60vw;
-                min-width: 550px;
+                min-width: 300px;
                 flex-shrink: 0;
                 display: relative;
 
@@ -509,8 +509,9 @@ body {
                     justify-content: space-around;
                     width: auto;
                     height: 100%;
-                    padding: 50px 5px 50px 200px;
+                    padding: 50px 5px 50px 120px;
                     min-width: 740px;
+                    
 
                     mix-blend-mode: multiply;
 
@@ -549,7 +550,7 @@ body {
                         font-weight: 800;
                         color: white;
                         line-height: 70px;
-                        width: 90%;
+                        width: 80%;
                         margin-bottom: 20px;
                     }
 
@@ -660,20 +661,17 @@ body {
                 align-items: top;
                 flex-wrap: wrap;
                 flex-direction: row;
-                justify-content: space-between;
-                gap: 20px;
+                justify-content: space-around; 
 
                 .content-block {
                     display: flex;
                     flex-direction: column;
-                    // margin: 20px;
                     width: calc(50% - 40px);
                     padding: 15px;
 
                     .block__header {
                         height: 25px;
                         width: 100%;
-                        //padding:10px;
                         display: flex;
                         align-items: center;
                         justify-content: left;
@@ -692,8 +690,6 @@ body {
                             margin-right: 20px;
                         }
                     }
-
-
 
                     p {
                         font-size: 1.2rem;
@@ -1056,10 +1052,11 @@ body {
             flex-wrap: wrap;
             flex-direction: row;
             margin-bottom: 50px;
+            gap: 50px;
 
-            &>* {
-                margin-right: 60px;
-            }
+            // &>* {
+            //     margin-right: 60px;
+            // }
 
             h1 {
                 color: black;

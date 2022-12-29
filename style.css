@@ -368,7 +368,7 @@ body {
 .container #first-page .first-page__left .left__content__wrapper {
   margin-top: 170px;
   width: 60vw;
-  min-width: 550px;
+  min-width: 300px;
   flex-shrink: 0;
   display: relative;
 }
@@ -386,7 +386,7 @@ body {
   justify-content: space-around;
   width: auto;
   height: 100%;
-  padding: 50px 5px 50px 200px;
+  padding: 50px 5px 50px 120px;
   min-width: 740px;
   mix-blend-mode: multiply;
 }
@@ -412,7 +412,7 @@ body {
   font-weight: 800;
   color: white;
   line-height: 70px;
-  width: 90%;
+  width: 80%;
   margin-bottom: 20px;
 }
 .container #first-page .first-page__left .left__content__wrapper .left__content h3 {
@@ -503,8 +503,7 @@ body {
   align-items: top;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: space-around;
 }
 .container #second-page .second-page__content-wrapper .content-body .content-block {
   display: flex;
@@ -823,9 +822,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 50px;
-}
-.container #sponsors .sponsors__flex > * {
-  margin-right: 60px;
+  gap: 50px;
 }
 .container #sponsors .sponsors__flex h1 {
   color: black;
