@@ -355,7 +355,7 @@ body .container #sixth-page .sixth-page__red-square .respDiv {
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
   .header .header__logo {
-    background-image: url(../images/logo_small.svg);
+    background-image: url("http://r3dmotion.pl/images/logo_small.svg");
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
