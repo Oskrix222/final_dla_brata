@@ -1151,6 +1151,8 @@ body {
             display: flex;
             justify-content: center;
             a {
+                position:relative;
+                left:10px;
                 color:white;
             }
         }

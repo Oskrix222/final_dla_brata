@@ -902,6 +902,8 @@ body {
   justify-content: center;
 }
 .container #footer .dev a {
+  position: relative;
+  left: 10px;
   color: white;
 }
 .container #footer .footer__block--bolder {
