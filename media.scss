@@ -496,7 +496,16 @@
 
   .header {
     .header__logo {
+      background-image: url(../images/logo_small.svg);
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: center;
       width: 100px;
+      a {
+        img {
+          display: none;
+        }
+      }
     }
     .header__menu {
       width: 100%;

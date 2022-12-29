@@ -355,7 +355,14 @@ body .container #sixth-page .sixth-page__red-square .respDiv {
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
   .header .header__logo {
+    background-image: url(../images/logo_small.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
     width: 100px;
+  }
+  .header .header__logo a img {
+    display: none;
   }
   .header .header__menu {
     width: 100%;
