@@ -496,14 +496,14 @@
 
   .header {
     .header__logo {
-      background-image: url("http://r3dmotion.pl/images/logo_small.svg");
+      background-image: url(http://r3dmotion.pl/images/logo_small.svg);
       background-repeat: no-repeat;
       background-size: 50%;
       background-position: center;
       width: 100px;
       a {
         img {
-          display: none;
+          display:none;
         }
       }
     }
@@ -543,8 +543,20 @@
 }
 
 
-@media only screen and (min-width: $desktop) and (max-width: $large) {
-  // Large desktop styles
+@media only screen and  (max-width: 1000px) {
+  body {
+    .header {
+      .header__logo {
+        background-image: none;
+        a {
+          img {
+            display:block;
+            width: 55%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: $min-extra-large) {
