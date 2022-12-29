@@ -352,6 +352,9 @@ body .container #sixth-page .sixth-page__red-square .respDiv {
   body .container #footer .footer__block img {
     margin: 10px;
   }
+  body .container #footer .footer__block .dev {
+    top: 0;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1300px) {
   .header .header__logo {
