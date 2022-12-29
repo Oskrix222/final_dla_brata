@@ -1,6 +1,5 @@
 
 function main() {
-    location.reload();
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
