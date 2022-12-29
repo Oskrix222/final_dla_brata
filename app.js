@@ -1,6 +1,6 @@
 
 function main() {
-
+    location.reload();
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
@@ -10,7 +10,7 @@ function main() {
     const animate = document.querySelectorAll('.animate')
     const printerSec = document.querySelector('#printers');
     let isClicked = 1;
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
