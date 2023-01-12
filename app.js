@@ -1,5 +1,5 @@
 
-window.location.reload();
+
 function main() {
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
