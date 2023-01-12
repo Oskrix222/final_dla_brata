@@ -10,7 +10,7 @@
         integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>R3d</title>
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -325,30 +325,7 @@
             <div class="dev">Dev: <a href="https://pl-pl.facebook.com/oskar.kubowidz/" target="_blank"> Oskar Kubowicz</a></div>
         </section>
     </div>
-    <!-- <script type="text/javascript" defer>
-
-        function makeSite() {
-
-            // window.location.reload();
-
-            function getLastCommitId() {
-                fetch('https://api.github.com/repos/Oskrix222/final_dla_brata/commits')
-                    .then(response => response.json())
-                    .then(data => {
-                        let lastCommit = data[0].sha;
-                        makeGithubJS('app.js', lastCommit)
-                    })
-            }
-            function makeGithubJS(file, commit) {
-                var link = document.createElement('script');
-                link.src = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
-                link.setAttribute('defer', '');
-                link.setAttribute('async', 'true');
-                document.getElementsByTagName('body')[0].appendChild(link);
-            };
-            getLastCommitId();
-        } 
-    </script> -->
+  
 </body>
 
 </html>
