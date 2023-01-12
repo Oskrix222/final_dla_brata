@@ -1,5 +1,5 @@
 
-function main() {
+document.addEventListener('DOMContentLoaded', () => {
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
@@ -11,7 +11,7 @@ function main() {
     let isClicked = 1;
     const loadOverlay = document.querySelector('.loadOverlay');
     console.log("123");
-    loadOverlay.style.display = "none";
+    loadOverlay.style.display = "none !important";
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -356,16 +356,17 @@ function main() {
     makePrinterSpec();
     downArrowScroll(downArrow, secPage);
 }
+);
 
-if (document.readyState !== 'loading') {
-    console.log('document is already ready, just execute code here');
-    main();
-} else {
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log('document was not ready, place code here');
-        main();
-    })
-};
+// if (document.readyState !== 'loading') {
+//     console.log('document is already ready, just execute code here');
+//     main();
+// } else {
+//     document.addEventListener('DOMContentLoaded', function () {
+//         console.log('document was not ready, place code here');
+//         main();
+//     })
+// };
 
 
 // document.onreadystatechange = function () {
