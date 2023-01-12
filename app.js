@@ -1,4 +1,5 @@
 
+window.location.reload();
 function main() {
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
@@ -12,6 +13,7 @@ function main() {
     const loadOverlay = document.querySelector('.loadOverlay');
     console.log("123");
     loadOverlay.style.display = "none";
+
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
