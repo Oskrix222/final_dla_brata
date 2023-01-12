@@ -7,7 +7,14 @@
 
 body {
     position: absolute;
-    overflow-x:hidden;
+    overflow:auto;
+}
+// body > * {
+//     overflow-x: auto;
+// }
+
+.container {
+    overflow-y:hidden !important;
 }
 
 html,

@@ -9,7 +9,11 @@
 
 body {
   position: absolute;
-  overflow-x: hidden;
+  overflow: auto;
+}
+
+.container {
+  overflow-y: hidden !important;
 }
 
 html,
@@ -61,10 +65,6 @@ body {
     transform: translate(0px, 0px) scale(1);
   }
 }
-.loadOverlay {
-  display: none !important;
-}
-
 .animation-box {
   position: relative;
   left: 22.5px;
