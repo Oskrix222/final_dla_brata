@@ -357,15 +357,19 @@ function main() {
     downArrowScroll(downArrow, secPage);
 }
 
-if (document.readyState !== 'loading') {
-    console.log('document is already ready, just execute code here');
+// if (document.readyState !== 'loading') {
+//     console.log('document is already ready, just execute code here');
+//     main();
+// } else {
+//     document.addEventListener('DOMContentLoaded', function () {
+//         console.log('document was not ready, place code here');
+//         main();
+//     })
+// };
+
+window.addEventListener('load', function () {
     main();
-} else {
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log('document was not ready, place code here');
-        main();
-    })
-};
+});
 
 
 // document.onreadystatechange = function () {
