@@ -89,18 +89,18 @@ function main() {
                     element.lastElementChild.innerHTML = element.lastElementChild.dataset.text;
                     GSAPArrowRotate(element.firstElementChild, 180, .175);
 
-                    if ((index == 0 || index == 1) && isClicked > 1) {
-                        addPrintersHeight(200)
-                    }
-                    if (index > 1) {
-                        addPrintersHeight(200)
-                    }
+                    // if ((index == 0 || index == 1) && isClicked > 1) {
+                    //     addPrintersHeight(200)
+                    // }
+                    // if (index > 1) {
+                    //     addPrintersHeight(200)
+                    // }
 
 
                 } else {
-                    if (index == 0 || index == 1) {
-                        isClicked--;
-                    }
+                    // if (index == 0 || index == 1) {
+                    //     isClicked--;
+                    // }
 
                     element.lastElementChild.classList.remove("active");
                     GSAPspecHide(element.lastElementChild);
@@ -108,12 +108,12 @@ function main() {
                     GSAPArrowRotate(element.firstElementChild, 0, .175);
 
 
-                    if ((index == 1 || index == 0) && isClicked == 1) {
-                        addPrintersHeight(-200)
-                    }
-                    if (index > 1) {
-                        addPrintersHeight(-200)
-                    }
+                    // if ((index == 1 || index == 0) && isClicked == 1) {
+                    //     addPrintersHeight(-200)
+                    // }
+                    // if (index > 1) {
+                    //     addPrintersHeight(-200)
+                    // }
                 }
             });
         });
