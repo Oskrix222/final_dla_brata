@@ -11,7 +11,7 @@ function main() {
     let isClicked = 1;
     const loadOverlay = document.querySelector('.loadOverlay');
 
-    loadOverlay.style.display = 'none';
+    loadOverlay.style.display = "none";
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
