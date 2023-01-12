@@ -7,7 +7,7 @@ function getLastCommitId() {
       makeGithubCSS('style.css', lastCommit);
       makeGithubCSS('media.css', lastCommit); 
       makeGithubIndex('index.html', lastCommit);
-      makeGithubJS('app.js', lastCommit)
+      makeGithubJS('app.js', lastCommit);
     })
 }
 
@@ -50,7 +50,6 @@ function makeSite() {
           .then(response => response.json())
           .then(data => {
               let lastCommit = data[0].sha;
-
               makeGithubCSS('style.css', lastCommit);
               makeGithubCSS('media.css', lastCommit);
               makeGithubJS('app.js', lastCommit)
@@ -76,7 +75,8 @@ function makeSite() {
 
  
   
-} window.onload = function () {
+} 
+window.onload = function () {
    makeSite();
   }
 

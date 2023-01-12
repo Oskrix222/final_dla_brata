@@ -9,6 +9,9 @@ function main() {
     const animate = document.querySelectorAll('.animate')
     const printerSec = document.querySelector('#printers');
     let isClicked = 1;
+    const loadOverlay = document.querySelector('.loadOverlay');
+
+    loadOverlay.style.display = 'none';
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -356,7 +359,6 @@ function main() {
 
 if (document.readyState !== 'loading') {
     console.log('document is already ready, just execute code here');
-    
     main();
 } else {
     document.addEventListener('DOMContentLoaded', function () {
