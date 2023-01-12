@@ -10,7 +10,7 @@ function main() {
     const printerSec = document.querySelector('#printers');
     let isClicked = 1;
     const loadOverlay = document.querySelector('.loadOverlay');
-
+    console.log("123");
     loadOverlay.style.display = "none";
 
     const observer = new IntersectionObserver((entries) => {
