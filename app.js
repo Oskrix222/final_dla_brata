@@ -10,6 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const printerSec = document.querySelector('#printers');
     let isClicked = 1;
     const loadOverlay = document.querySelector('.loadOverlay');
+    const mainHamBtn = document.querySelector('.main-ham-btn');
+        const hamLine = document.querySelector('.ham-btn__lines');
+        const hamMenuLinks = document.querySelectorAll('.menu__link');
     console.log("123");
     loadOverlay.style.display = "none !important";
 
@@ -193,9 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function makeHamburgerMenu() {
-        const mainHamBtn = document.querySelector('.main-ham-btn');
-        const hamLine = document.querySelector('.ham-btn__lines');
-        const hamMenuLinks = document.querySelectorAll('.menu__link');
+        
 
         hamMenuLinks.forEach((element) => {
             element.addEventListener('click', () => {
