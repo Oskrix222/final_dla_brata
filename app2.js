@@ -8,7 +8,7 @@ function getLastCommitId() {
       makeGithubCSS('media.css', lastCommit); 
       makeGithubIndex('index.html', lastCommit);
       makeGithubJS('app.js', lastCommit);
-    })
+    });
 }
 
 function makeGithubCSS(file, commit) {
