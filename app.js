@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+function main() {
     const sec = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.menu__link');
     const secPage = document.querySelector('#second-page');
@@ -10,11 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const printerSec = document.querySelector('#printers');
     let isClicked = 1;
     const loadOverlay = document.querySelector('.loadOverlay');
-    const mainHamBtn = document.querySelector('.main-ham-btn');
-        const hamLine = document.querySelector('.ham-btn__lines');
-        const hamMenuLinks = document.querySelectorAll('.menu__link');
     console.log("123");
-    loadOverlay.style.display = "none !important";
+    loadOverlay.style.display = "none";
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -196,7 +193,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function makeHamburgerMenu() {
-        
+        const mainHamBtn = document.querySelector('.main-ham-btn');
+        const hamLine = document.querySelector('.ham-btn__lines');
+        const hamMenuLinks = document.querySelectorAll('.menu__link');
 
         hamMenuLinks.forEach((element) => {
             element.addEventListener('click', () => {
@@ -357,17 +356,16 @@ document.addEventListener('DOMContentLoaded', () => {
     makePrinterSpec();
     downArrowScroll(downArrow, secPage);
 }
-);
 
-// if (document.readyState !== 'loading') {
-//     console.log('document is already ready, just execute code here');
-//     main();
-// } else {
-//     document.addEventListener('DOMContentLoaded', function () {
-//         console.log('document was not ready, place code here');
-//         main();
-//     })
-// };
+if (document.readyState !== 'loading') {
+    console.log('document is already ready, just execute code here');
+    main();
+} else {
+    document.addEventListener('DOMContentLoaded', function () {
+        console.log('document was not ready, place code here');
+        main();
+    })
+};
 
 
 // document.onreadystatechange = function () {
