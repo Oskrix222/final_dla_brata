@@ -10,11 +10,10 @@
         integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>R3d</title>
-    <script src="app2.js"></script>
 </head>
 
-<body>
-    
+<body onload="makeSite();">
+
     <div class="header">
         <div class="header__logo">
             <a href="index.html">
@@ -93,7 +92,12 @@
                     <h1 class="animate">Na czym polega przewaga rozwiązań <span class="text--red">R3D</span> Motion?
                     </h1>
                     <h3 class="animate">
-                        Działamy z pasją, w misji by dostarczyć Ci najlepszy możliwy sprzęt który pozwoli na użycie większości dostępnych materiałów, drukowanie FDM w nowej jakości oraz prędkości. Drukarki Mondo to moment gdzie ogranicza nas jedynie fizyka - kinematyka maszyny jest w stanie rozpędzić się do 1000mm/s z przyspieszeniem do 50000mm/s² - standardem w branży jest 200mm/s oraz 2000mm/s², przy tak ekstremalnych prędkościach ogranicza nas sam drukowany materiał - prędkość jego plastyfikacji.
+                        Działamy z pasją, w misji by dostarczyć Ci najlepszy możliwy sprzęt który pozwoli na użycie
+                        większości dostępnych materiałów, drukowanie FDM w nowej jakości oraz prędkości. Drukarki Mondo
+                        to moment gdzie ogranicza nas jedynie fizyka - kinematyka maszyny jest w stanie rozpędzić się do
+                        1000mm/s z przyspieszeniem do 50000mm/s² - standardem w branży jest 200mm/s oraz 2000mm/s², przy
+                        tak ekstremalnych prędkościach ogranicza nas sam drukowany materiał - prędkość jego
+                        plastyfikacji.
                     </h3>
                 </div>
                 <div class="content-body">
@@ -159,7 +163,8 @@
         <section id="third-page">
             <div class="third-page__img clipped__left--noBG"></div>
             <div class="third-page__content clipped__right">
-                <h1 class="animate">Nasza misja to ułatwianie życia naszym klientom oraz przesuwanie dalej granic druku 3D w zastosowaniach technicznych.</h1>
+                <h1 class="animate">Nasza misja to ułatwianie życia naszym klientom oraz przesuwanie dalej granic druku
+                    3D w zastosowaniach technicznych.</h1>
                 <button class="btn btn--transparent animate">Skontaktuj się z nami
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
@@ -238,7 +243,7 @@
         </section>
 
         <section id="sixth-page">
-            
+
             <div class="sixth-page__transparent">
                 <h1 class="animate">Zleć wydruk swojego elementu!</h1>
                 <h3 class="text text--red animate">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
@@ -247,8 +252,10 @@
                 <h3 class="animate"> elit con 'Esc'.</h3>
             </div>
             <div class="sixth-page__red-square">
-                <h1 class="animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt=""> Co możemy zaoferować?</h1>
-                <h3 class="animate">Zaczynając od pojedynczego element, który uległ uszkodzeniu oraz kończąc na niskoseryjnej produkcji - jesteśmy w stanie dostarczyć ci element oraz rozwiązać</h3>
+                <h1 class="animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt=""> Co możemy zaoferować?
+                </h1>
+                <h3 class="animate">Zaczynając od pojedynczego element, który uległ uszkodzeniu oraz kończąc na
+                    niskoseryjnej produkcji - jesteśmy w stanie dostarczyć ci element oraz rozwiązać</h3>
                 <div class="list">
                     <div class="list__item animate"><img src="images/bialy_maly_kopniety_kwadracik.svg" alt="">Lorem
                         ipsum dolor
@@ -274,7 +281,7 @@
                     veniam nemo? Impedit officiis tempora accusamus consequuntur optio atque laboriosam consectetur
                     quam, vero aliquam, autem nam!</h3>
             </div>
-       
+
         </section>
 
         <section id="sponsors">
@@ -322,9 +329,51 @@
                 <img src="images/linkedin.svg" alt="">
                 <img src="images/instagram.svg" alt="">
             </div>
-            <div class="dev">Dev: <a href="https://pl-pl.facebook.com/oskar.kubowidz/" target="_blank"> Oskar Kubowicz</a></div>
+            <div class="dev">Dev: <a href="https://pl-pl.facebook.com/oskar.kubowidz/" target="_blank"> Oskar
+                    Kubowicz</a></div>
         </section>
     </div>
+
+    <script type="text/javascript">
+       
+
+        
+
+
+
+        function makeSite() {
+            console.log("makeSiteWorking");
+
+
+            function getLastCommitId() {
+                fetch('https://api.github.com/repos/Oskrix222/final_dla_brata/commits')
+                    .then(response => response.json())
+                    .then(data => {
+                        let lastCommit = data[0].sha;
+                        makeGithubCSS('style.css', lastCommit);
+                        makeGithubCSS('media.css', lastCommit);
+                        makeGithubJS('app.js', lastCommit)
+                    })
+            }
+
+            function makeGithubCSS(file, commit) {
+                var link = document.createElement('link');
+                ("style");
+                link.rel = "stylesheet";
+                link.href = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+                document.getElementsByTagName('head')[0].appendChild(link);
+            }
+
+            function makeGithubJS(file, commit) {
+                var link = document.createElement('script');
+                link.src = `https://cdn.jsdelivr.net/gh/Oskrix222/final_dla_brata@${commit}/${file}`;
+                link.setAttribute('defer', '');
+                link.setAttribute('async', 'true');
+                document.getElementsByTagName('body')[0].appendChild(link);
+            };
+            getLastCommitId();
+        }
+    </script>
 </body>
 
 </html>
